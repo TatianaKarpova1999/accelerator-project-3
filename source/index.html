@@ -9,16 +9,10 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-
     <section data-test="hero">
       <header class="header">
         <div class="header__wrapper">
-          <img class="header__icon" src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип Internship">
+          <img class="header__icon" src="/__spritemap#sprite-logo-view" width="52" height="52" alt="Логотип Internship">
         </div>
 
         <nav class="header__nav header__nav--close" aria-label="Главная навигация">
@@ -473,7 +467,62 @@
       </section>
     </main>
 
-    <section data-test="footer">footer</section>
+    <footer class="footer" data-test="footer">
+      <div class="footer__wrapper">
+        <img class="footer__icon" src="/__spritemap#sprite-footer-logo-view" width="52" height="52" alt="Логотип Internship">
+        <nav class="footer__nav" aria-label="Дополнительная навигация">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О проекте</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Программы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Как поехать</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Новости</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg class="social__icon" width="17" height="9">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg class="social__icon" width="9" height="16">
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Reddit</span>
+              <svg class="social__icon" width="15" height="15">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__protection">Стажировка © 2023 Все права защищены</span>
+        <a class="footer__copyrigh" href="#">Политика конфиденциальности</a>
+      </div>
+    </footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
