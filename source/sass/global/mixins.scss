@@ -21,4 +21,16 @@
   text-transform: uppercase;
   box-sizing: border-box;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background-color: $basic-blue;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+  }
 }

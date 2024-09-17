@@ -1,0 +1,117 @@
+.slide {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p {
+    max-width: 267px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-black;
+    padding: 15px 14px;
+    padding-top: 0;
+    margin: 0;
+    background-color: $basic-white;
+    border-radius: 0 0 16px 0;
+    box-sizing: border-box;
+  }
+
+  &--one {
+    background-image: url("../../img/hero-mobile-1@2x.webp");
+  }
+
+  &--two {
+    background-image: url("../../img/hero-mobile-2@2x.webp");
+  }
+
+  &--three {
+    background-image: url("../../img/hero-mobile-3@2x.webp");
+  }
+}
+
+.slide__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  padding-top: 229px;
+}
+
+.slide__title {
+  max-width: 290px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: left;
+  color: $basic-blue;
+  margin: 0;
+  padding: 20px 15px;
+  padding-bottom: 16px;
+  padding-left: 14px;
+  background-color: $basic-white;
+  border-radius: 0 16px 16px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 10px;
+    background-image: url("../__spritemap#sprite-corner-view");
+    background-repeat: no-repeat;
+    top: 100%;
+    right: 15px;
+  }
+}
+
+.slide__link-container {
+  padding: 10px 15px;
+  background-color: $basic-white;
+  max-width: 184px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 0 0 16px 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: url("../__spritemap#sprite-corner-view");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 100%;
+  }
+}
+
+.slide__link {
+  @include button;
+
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 13px 21px;
+  padding-right: 45px;
+  position: relative;
+  display: block;
+
+  &::before {
+    width: 34px;
+    height: 34px;
+    right: 3px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    mask-image: url("../__spritemap#sprite-arr-view");
+    mask-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    background-color: $basic-white;
+  }
+}

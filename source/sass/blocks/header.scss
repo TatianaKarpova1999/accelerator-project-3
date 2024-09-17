@@ -1,3 +1,11 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .header__wrapper {
   max-width: 320px;
   margin: 0 auto;
@@ -70,18 +78,6 @@
   padding: 20px 21px;
   padding-right: 70px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    background-color: $basic-blue;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5px;
-  }
 
   &::after {
     content: "";
