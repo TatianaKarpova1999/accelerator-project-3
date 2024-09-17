@@ -10,43 +10,56 @@
 
   <body class="page-body">
     <section data-test="hero">
+      <h1 class="visually-hidden">Обучение за рубежом</h1>
       <header class="header">
         <div class="header__wrapper">
-          <img class="header__icon" src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип Internship">
-        </div>
+          <div class="header__logo">
+            <img class="header__icon" src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип Internship">
+          </div>
 
-        <nav class="header__nav header__nav--close" aria-label="Главная навигация">
-          <button class="header__toggle header__toggle--close" type="button">Меню</button>
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="#">О проекте</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Программы</a>
-              <ul class="header__programs-list">
-                <li class="header__programs-item">
-                  <a class="header__programs-link" href="#">Стажировки</a>
-                </li>
-                <li class="header__programs-item">
-                  <a class="header__programs-link" href="#">Волонтёрство</a>
-                </li>
-                <li class="header__programs-item">
-                  <a class="header__programs-link" href="#">Учеба</a>
-                </li>
-                <li class="header__programs-item">
-                  <a class="header__programs-link" href="#">Религия</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+          <nav class="header__nav header__nav--close" aria-label="Главная навигация">
+            <button class="header__toggle header__toggle--close" type="button">Меню</button>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">О проекте</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Программы</a>
+                <ul class="header__programs-list">
+                  <li class="header__programs-item">
+                    <a class="header__programs-link" href="#">Стажировки</a>
+                  </li>
+                  <li class="header__programs-item">
+                    <a class="header__programs-link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="header__programs-item">
+                    <a class="header__programs-link" href="#">Учеба</a>
+                  </li>
+                  <li class="header__programs-item">
+                    <a class="header__programs-link" href="#">Религия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Как поехать</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Новости</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <section class="hero-content">
         <div class="hero-content__wrapper">
-          <h1 class="visually-hidden">Обучение за рубежом</h1>
-
-          <div class="hero__swiper swiper-hero">
+          <div class="hero-content__swiper swiper-hero">
             <div class="swiper-wrapper">
               <div class="swiper-slide slide slide--one">
                 <div class="slide__wrapper">
@@ -74,7 +87,6 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-        </div>
         </div>
       </section>
     </section>
@@ -166,7 +178,7 @@
         </div>
       </section>
 
-      <section data-test="grant">
+      <section class="grant" data-test="grant">
         <div class="grant__wrapper">
           <div class="grant__info">
             <h2 class="grant__title">Как поехать</h2>
@@ -263,36 +275,36 @@
         </div>
       </section>
 
-      <section class="FAQ" data-test="FAQ">
-        <div class="FAQ__wrapper">
-          <h2 class="FAQ__title">Вопросы и ответы</h2>
+      <section class="faq" data-test="FAQ">
+        <div class="faq__wrapper">
+          <h2 class="faq__title">Вопросы и ответы</h2>
 
-          <div class="FAQ__content">
-            <ul class="FAQ__list">
-              <li class="FAQ__item">
-                <h3 class="FAQ__content-title">Кто организатор? Какие сроки у программы?</h3>
+          <div class="faq__content">
+            <ul class="faq__list">
+              <li class="faq__item">
+                <h3 class="faq__content-title">Кто организатор? Какие сроки у программы?</h3>
                 <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
-                <button class="FAQ__button" aria-label="Открыть ответ" type="button"></button>
+                <button class="faq__button" aria-label="Открыть ответ" type="button"></button>
               </li>
-              <li class="FAQ__item">
-                <h3 class="FAQ__content-title">Что такое грант на обучение?</h3>
+              <li class="faq__item">
+                <h3 class="faq__content-title">Что такое грант на обучение?</h3>
                 <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
-                <button class="FAQ__button" aria-label="Открыть ответ" type="button"></button>
+                <button class="faq__button" aria-label="Открыть ответ" type="button"></button>
               </li>
-              <li class="FAQ__item FAQ__item--current">
-                <h3 class="FAQ__content-title">Как определяется стоимость программы?</h3>
+              <li class="faq__item faq__item--current">
+                <h3 class="faq__content-title">Как определяется стоимость программы?</h3>
                 <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
-                <button class="FAQ__button FAQ__button--current" aria-label="Открыть ответ" type="button"></button>
+                <button class="faq__button faq__button--current" aria-label="Открыть ответ" type="button"></button>
               </li>
-              <li class="FAQ__item">
-                <h3 class="FAQ__content-title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
+              <li class="faq__item">
+                <h3 class="faq__content-title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h3>
                 <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
-                <button class="FAQ__button" aria-label="Открыть ответ" type="button"></button>
+                <button class="faq__button" aria-label="Открыть ответ" type="button"></button>
               </li>
-              <li class="FAQ__item">
-                <h3 class="FAQ__content-title">Как выглядит полный процесс регистрации на программу «Стажировка»?</h3>
+              <li class="faq__item">
+                <h3 class="faq__content-title">Как выглядит полный процесс регистрации на программу «Стажировка»?</h3>
                 <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
-                <button class="FAQ__button" aria-label="Открыть ответ" type="button"></button>
+                <button class="faq__button" aria-label="Открыть ответ" type="button"></button>
               </li>
             </ul>
           </div>
@@ -301,7 +313,7 @@
 
       <section class="reviews" data-test="reviews">
         <div class="reviews__wrapper">
-          <div class="reviews__slider swiper-reviews"></div>
+          <div class="reviews__slider swiper-reviews">
             <div class="reviews__list swiper-wrapper">
               <div class="reviews__item reviews-card reviews-card--one swiper-slide">
                 <div class="reviews__info">
@@ -345,7 +357,7 @@
                 <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
               </div>
 
-              <div class="reviews__item reviews-card reviews-card--one swiper-slide"></div>
+              <div class="reviews__item reviews-card reviews-card--one swiper-slide">
                 <div class="reviews__info">
                   <picture>
                     <source width="90" height="90" type="image/webp"  media="(min-width: 768px)" srcset="img/reviews-desktop-1@1x.webp 1x, img/reviews-desktop-1@2x.webp 2x">
@@ -431,12 +443,12 @@
         <div class="form__wrapper">
           <h2 class="form__title">Напишите нам</h2>
           <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-          <div class="form__container"></div>
+          <div class="form__container">
             <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="field__label" for="name">Имя</label>
-                  <input class="field__input" type="text" id="name" name="name" required>
+                  <label class="form__label" for="name">Имя</label>
+                  <input class="form__input" type="text" id="name" name="name" required>
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="phone">Телефон</label>
@@ -447,17 +459,18 @@
                   <textarea id="comment" name="comment"></textarea>
                 </li>
                 <li class="form__item">
-                  <select required>
-                    <option value=''></option>
-                    <option value='Saint Petersburg'>Санкт-Петербург</option>
-                    <option value='Saint Petersburg'>Санкт-Петербург</option>
-                    <option value='Saint Petersburg'>Санкт-Петербург</option>
-                    <option value='Saint Petersburg'>Санкт-Петербург</option>
+                  <label class="visually-hidden" for="city">Выберете город</label>
+                  <select name="city" id="city" required>
+                    <option selected disabled label=" "></option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
                   </select>
                 </li>
                 <li class="form__item">
-                  <input class="checkbox__input" type="checkbox" id="agreement" name="agreement" required>
-                  <label class="checkbox__text" for="agreement">Я согласен на обработку моих персональных данных</label>
+                  <input class="form__input" type="checkbox" id="agreement" name="agreement" required>
+                  <label class="form__text" for="agreement">Я согласен на обработку моих персональных данных</label>
                 </li>
               </ul>
               <button class="form__button" type="submit">Отправить</button>
@@ -525,5 +538,4 @@
     </footer>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

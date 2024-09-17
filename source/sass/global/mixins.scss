@@ -8,3 +8,17 @@
     src: $font-src;
   }
 }
+
+//Кнопки
+@mixin button {
+  background-color: $basic-white;
+  border: 1px solid $basic-blue;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-blue;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  cursor: pointer;
+}
