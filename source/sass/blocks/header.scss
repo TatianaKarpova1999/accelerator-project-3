@@ -79,6 +79,11 @@
   padding-right: 70px;
   position: relative;
 
+  &::before {
+    width: 46px;
+    height: 46px;
+  }
+
   &::after {
     content: "";
     position: absolute;

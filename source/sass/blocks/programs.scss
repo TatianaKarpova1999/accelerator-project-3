@@ -1,0 +1,33 @@
+.programs__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 15px;
+  display: grid;
+}
+
+.programs__title {
+  @include h2;
+
+  margin-bottom: 35px;
+  color: $basic-blue;
+}
+
+.programs__link {
+  @include button;
+  @include arr-thick;
+
+  order: 1;
+  position: relative;
+  padding: 14px 31px;
+  padding-right: 69px;
+  text-decoration: none;
+  background-color: transparent;
+  max-width: 205px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.programs__slider {
+  margin-bottom: 30px;
+}

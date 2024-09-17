@@ -1,0 +1,83 @@
+.grant {
+  background-color: $basic-blue;
+}
+
+.grant__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 70px 15px;
+}
+
+.grant__title {
+  @include h2;
+
+  color: $basic-white;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.grant__info {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    color: $basic-white;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.grant__image {
+  margin-bottom: 30px;
+}
+
+.grant__conditions-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $basic-white;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.grant__list {
+  margin: 0;
+  padding-left: 15px;
+  list-style-type: none;
+  counter-reset: num;
+}
+
+.grant__item {
+  padding: 25px 26px;
+  border: 1px solid $basic-grey;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  position: relative;
+
+  p {
+    margin:  0;
+    color: $basic-grey;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: counter(num);
+    counter-increment: num;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-color: $basic-blue;
+    color: $basic-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -15px;
+    top: -5px;
+    border-radius: 30px;
+  }
+}
