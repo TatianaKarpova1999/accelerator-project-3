@@ -32,6 +32,18 @@
   background-color: $basic-white;
   max-width: 146px;
   border-radius: 12px 12px 0 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../__spritemap#sprite-corner-news-view");
+    background-repeat: no-repeat;
+    left: 100%;
+    bottom: 0;
+  }
 }
 
 .programs__description {

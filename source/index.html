@@ -230,52 +230,62 @@
       <section class="news" data-test="news">
         <div class="news__wrapper">
           <h2 class="news__title">Новости и материалы</h2>
-          <ul class="news__tabs">
-            <li class="news__tab">
-              <a class="news__tab-link" href="#">Общее</a>
-            </li>
-            <li class="news__tab">
-              <a class="news__tab-link" href="#">Волонтёрство</a>
-            </li>
-            <li class="news__tab">
-              <a class="news__tab-link" href="#">Стажировки</a>
-            </li>
-            <li class="news__tab">
-              <a class="news__tab-link" href="#">Карьера</a>
-            </li>
-            <li class="news__tab">
-              <a class="news__tab-link" href="#">Путешествия</a>
-            </li>
-          </ul>
+          <div class="news__tabs swiper-tabs">
+            <div class="swiper-wrapper">
+              <div class="news__tab swiper-slide">
+                <a class="news__tab-link news__tab-link--current" href="#">Общее</a>
+              </div>
+              <div class="news__tab swiper-slide">
+                <a class="news__tab-link" href="#">Волонтёрство</a>
+              </div>
+              <div class="news__tab swiper-slide">
+                <a class="news__tab-link" href="#">Стажировки</a>
+              </div>
+              <div class="news__tab swiper-slide">
+                <a class="news__tab-link" href="#">Карьера</a>
+              </div>
+              <div class="news__tab swiper-slide">
+                <a class="news__tab-link" href="#">Путешествия</a>
+              </div>
+            </div>
+          </div>
 
           <div class="news__slider swiper-news">
             <div class="news__list swiper-wrapper">
               <div class="news__item news-card news-card--one swiper-slide">
-                <span class="news__date">23/03/2023</span>
+                <span class="news-card__date">23/03/2023</span>
                 <h3 class="news-card__title">Интервью с участницей программы стажировки</h3>
-                <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                <a class="news__link" href="#" aria-label="Перейти к новости"></a>
+                <div class="news-card__description">
+                  <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                  <a class="news-card__link" href="#" aria-label="Перейти к новости"></a>
+                </div>
               </div>
 
-              <div class="news__item news-card news-card--one swiper-slide">
-                <span class="news__date">20/03/2023</span>
+              <div class="news__item news-card news-card--two swiper-slide">
+                <span class="news-card__date">20/03/2023</span>
                 <h3 class="news-card__title">Путешествуем по миру</h3>
-                <p>Какие места посещают наши студенты весной</p>
-                <a class="news__link" href="#" aria-label="Перейти к новости"></a>
+                <div class="news-card__description">
+                  <p>Какие места посещают наши студенты весной</p>
+                  <a class="news-card__link" href="#" aria-label="Перейти к новости"></a>
+                </div>
               </div>
 
-              <div class="news__item news-card news-card--one swiper-slide">
-                <span class="news__date">17/03/2023</span>
+              <div class="news__item news-card news-card--three swiper-slide">
+                <span class="news-card__date">17/03/2023</span>
                 <h3 class="news-card__title">Новая программа волонтёрства</h3>
-                <p>Программа помощи детям длительностью 4 месяца</p>
-                <a class="news__link" href="#" aria-label="Перейти к новости"></a>
+                <div class="news-card__description">
+                  <p>Программа помощи детям длительностью 4 месяца</p>
+                  <a class="news-card__link" href="#" aria-label="Перейти к новости"></a>
+                </div>
               </div>
 
-              <div class="news__item news-card news-card--one swiper-slide">
-                <span class="news__date">10/03/2023</span>
+              <div class="news__item news-card news-card--four swiper-slide">
+                <span class="news-card__date">10/03/2023</span>
                 <h3 class="news-card__title">Построй свою карьеру</h3>
-                <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                <a class="news__link" href="#" aria-label="Перейти к новости"></a>
+                <div class="news-card__description">
+                  <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <a class="news-card__link" href="#" aria-label="Перейти к новости"></a>
+                </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>

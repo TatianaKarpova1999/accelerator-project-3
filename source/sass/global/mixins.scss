@@ -9,7 +9,7 @@
   }
 }
 
-//Кнопки
+// Кнопки
 @mixin button {
   background-color: $basic-white;
   border: 1px solid $basic-blue;
@@ -35,7 +35,7 @@
   }
 }
 
-//Заголовки
+// Заголовки
 @mixin h2 {
   font-weight: 400;
   font-size: 20px;
@@ -43,7 +43,7 @@
   margin: 0;
 }
 
-//Стрелочки
+// Стрелочки
 @mixin arr-thin {
   &::after {
     content: "";
