@@ -1,0 +1,65 @@
+.about__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 15px;
+}
+
+.about__description {
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.about__title {
+  @include h2;
+
+  color: $basic-blue;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.about__target {
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $basic-blue;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.about__link {
+  @include button;
+  @include arr-thick;
+
+  text-decoration: none;
+  padding: 13px 21px;
+  padding-right: 59px;
+  background-color: transparent;
+  position: relative;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 40px;
+  display: block;
+  max-width: 223px;
+
+  &::before {
+    width: 34px;
+    height: 34px;
+  }
+}

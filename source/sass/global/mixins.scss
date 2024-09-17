@@ -34,3 +34,42 @@
     right: 5px;
   }
 }
+
+//Заголовки
+@mixin h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+}
+
+//Стрелочки
+@mixin arr-thin {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    mask-image: url("../__spritemap#sprite-arr-view");
+    mask-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    background-color: $basic-white;
+  }
+}
+
+@mixin arr-thick {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    mask-image: url("../__spritemap#sprite-arr-thick-view");
+    mask-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+    background-color: $basic-white;
+  }
+}

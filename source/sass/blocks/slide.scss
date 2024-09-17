@@ -87,6 +87,7 @@
 
 .slide__link {
   @include button;
+  @include arr-thin;
 
   text-decoration: none;
   font-size: 12px;
@@ -100,18 +101,5 @@
     width: 34px;
     height: 34px;
     right: 3px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    mask-image: url("../__spritemap#sprite-arr-view");
-    mask-repeat: no-repeat;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 16px;
-    background-color: $basic-white;
   }
 }
