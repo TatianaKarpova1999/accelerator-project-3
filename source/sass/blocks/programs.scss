@@ -4,6 +4,14 @@
   box-sizing: border-box;
   padding: 50px 15px;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 50px 45px;
+    display: grid;
+    row-gap: 40px;
+    align-items: center;
+  }
 }
 
 .programs__title {
@@ -11,6 +19,10 @@
 
   margin-bottom: 35px;
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .programs__link {
@@ -26,8 +38,21 @@
   max-width: 205px;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    padding: 21px 31px;
+    padding-right: 81px;
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 234px;
+  }
 }
 
 .programs__slider {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }

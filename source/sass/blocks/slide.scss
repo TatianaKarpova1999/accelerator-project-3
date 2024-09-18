@@ -30,14 +30,26 @@
 
   &--one {
     background-image: url("../../img/hero-mobile-1@2x.webp");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/hero-tablet-1@2x.webp");
+    }
   }
 
   &--two {
     background-image: url("../../img/hero-mobile-2@2x.webp");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/hero-tablet-2@2x.webp");
+    }
   }
 
   &--three {
     background-image: url("../../img/hero-mobile-3@2x.webp");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/hero-tablet-3@2x.webp");
+    }
   }
 }
 
