@@ -464,40 +464,42 @@
 
       <section class="form" data-test="form">
         <div class="form__wrapper">
-          <h2 class="form__title">Напишите нам</h2>
-          <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-          <div class="form__container">
-            <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label" for="name">Имя</label>
-                  <input class="form__input" type="text" id="name" name="name" required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="phone">Телефон</label>
-                  <input class="form__input" type="tel" id="phone" name="phone" required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="comment">Ваше сообщение</label>
-                  <textarea class="form__input" id="comment" name="comment"></textarea>
-                </li>
-                <li class="form__item">
-                  <label class="form__label" for="city">Выберете город</label>
-                  <select class="form__input" name="city" id="city" required>
-                    <option selected disabled label=" "></option>
-                    <option value="Saint Petersburg">Санкт-Петербург</option>
-                    <option value="Saint Petersburg">Санкт-Петербург</option>
-                    <option value="Saint Petersburg">Санкт-Петербург</option>
-                    <option value="Saint Petersburg">Санкт-Петербург</option>
-                  </select>
-                </li>
-                <li class="form__item form__item--checkbox">
-                  <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required>
-                  <label class="form__agreement" for="agreement">Я согласен на обработку моих персональных<br> данных</label>
-                </li>
-              </ul>
-              <button class="form__button" type="submit">Отправить</button>
-            </form>
+          <div class="form__content">
+            <h2 class="form__title">Напишите нам</h2>
+            <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <div class="form__container">
+              <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" type="text" id="name" name="name" required>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="phone">Телефон</label>
+                    <input class="form__input" type="tel" id="phone" name="phone" required>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="comment">Ваше сообщение</label>
+                    <textarea class="form__input" id="comment" name="comment"></textarea>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="city">Выберете город</label>
+                    <select class="form__input" name="city" id="city" required>
+                      <option selected disabled label=" "></option>
+                      <option value="Saint Petersburg">Санкт-Петербург</option>
+                      <option value="Saint Petersburg">Санкт-Петербург</option>
+                      <option value="Saint Petersburg">Санкт-Петербург</option>
+                      <option value="Saint Petersburg">Санкт-Петербург</option>
+                    </select>
+                  </li>
+                  <li class="form__item form__item--checkbox">
+                    <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required>
+                    <label class="form__agreement" for="agreement">Я согласен на обработку моих персональных<br> данных</label>
+                  </li>
+                </ul>
+                <button class="form__button" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -505,7 +507,9 @@
 
     <footer class="footer" data-test="footer">
       <div class="footer__wrapper">
-        <img class="footer__icon" src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип Internship">
+        <div class="footer__logo">
+          <img class="footer__icon" src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип Internship">
+        </div>
         <nav class="footer__nav" aria-label="Дополнительная навигация">
           <ul class="footer__list">
             <li class="footer__item">

@@ -1,0 +1,20 @@
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 98px;
+  column-gap: 10px;
+  order: 2;
+}
+
+.social__link {
+  width: 26px;
+  height: 26px;
+  background-color: $basic-blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

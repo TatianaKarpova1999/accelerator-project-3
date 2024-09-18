@@ -1,13 +1,16 @@
 .form {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../img/form-mobile@2x.webp");
-  background-position: 0 40px;
-  padding: 83px 10px;
-  padding-bottom: 80px;
+  padding: 40px 0;
 }
 
 .form__wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/form-mobile@2x.webp");
+  padding: 43px 10px;
+  padding-bottom: 40px;
+}
+
+.form__content {
   max-width: 300px;
   margin: 0 auto;
   box-sizing: border-box;
