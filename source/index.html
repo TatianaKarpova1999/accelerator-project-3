@@ -479,11 +479,11 @@
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="comment">Ваше сообщение</label>
-                  <textarea id="comment" name="comment"></textarea>
+                  <textarea class="form__input" id="comment" name="comment"></textarea>
                 </li>
                 <li class="form__item">
-                  <label class="visually-hidden" for="city">Выберете город</label>
-                  <select name="city" id="city" required>
+                  <label class="form__label" for="city">Выберете город</label>
+                  <select class="form__input" name="city" id="city" required>
                     <option selected disabled label=" "></option>
                     <option value="Saint Petersburg">Санкт-Петербург</option>
                     <option value="Saint Petersburg">Санкт-Петербург</option>
@@ -491,9 +491,9 @@
                     <option value="Saint Petersburg">Санкт-Петербург</option>
                   </select>
                 </li>
-                <li class="form__item">
-                  <input class="form__input" type="checkbox" id="agreement" name="agreement" required>
-                  <label class="form__text" for="agreement">Я согласен на обработку моих персональных данных</label>
+                <li class="form__item form__item--checkbox">
+                  <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required>
+                  <label class="form__agreement" for="agreement">Я согласен на обработку моих персональных<br> данных</label>
                 </li>
               </ul>
               <button class="form__button" type="submit">Отправить</button>
@@ -505,7 +505,7 @@
 
     <footer class="footer" data-test="footer">
       <div class="footer__wrapper">
-        <img class="footer__icon" src="/__spritemap#sprite-footer-logo-view" width="30" height="30" alt="Логотип Internship">
+        <img class="footer__icon" src="/__spritemap#sprite-logo-view" width="30" height="30" alt="Логотип Internship">
         <nav class="footer__nav" aria-label="Дополнительная навигация">
           <ul class="footer__list">
             <li class="footer__item">

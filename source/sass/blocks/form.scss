@@ -1,0 +1,104 @@
+.form {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/form-mobile@2x.webp");
+  background-position: 0 40px;
+  padding: 83px 10px;
+  padding-bottom: 80px;
+}
+
+.form__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 15px;
+  padding-bottom: 27px;
+  background-color: $basic-blue;
+  border-radius: 16px;
+}
+
+.form__title {
+  @include h2;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: $basic-white;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-grey;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__item {
+  margin-bottom: 20px;
+
+  textarea {
+    height: 94px;
+    resize: none;
+  }
+
+  &--checkbox {
+    display: flex;
+    column-gap: 10px;
+  }
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgb(240, 239, 233, 0.8);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.form__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-grey;
+}
+
+.form__agreement {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgb(255, 255, 255, 0.9);
+}
+
+.form__button {
+  @include button;
+  @include arr-thick;
+
+  padding: 16px 31px;
+  padding-right: 69px;
+  width: 100%;
+  background-color: transparent;
+  color: $basic-white;
+  border-color: $basic-white;
+  position: relative;
+
+  &::before {
+    background-color: $basic-white;
+  }
+
+  &::after {
+    background-color: $basic-blue;
+  }
+}
