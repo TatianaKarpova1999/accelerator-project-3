@@ -1,5 +1,9 @@
 .form {
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 58px;
+  }
 }
 
 .form__wrapper {
@@ -8,6 +12,16 @@
   background-image: url("../../img/form-mobile@2x.webp");
   padding: 43px 10px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 652px;
+    padding: 0;
+    padding-right: 210px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background-image: url("../../img/form-tablet@2x.webp");
+    box-sizing: border-box;
+  }
 }
 
 .form__content {
@@ -18,6 +32,13 @@
   padding-bottom: 27px;
   background-color: $basic-blue;
   border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 41px 40px;
+    padding-bottom: 36px;
+    max-width: 442px;
+  }
 }
 
 .form__title {
@@ -27,6 +48,12 @@
   line-height: 22px;
   color: $basic-white;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 31px;
+  }
 }
 
 .form__text {
@@ -35,6 +62,12 @@
   color: $basic-grey;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .form__list {
@@ -54,6 +87,10 @@
   &--checkbox {
     display: flex;
     column-gap: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -63,6 +100,11 @@
   color: rgb(240, 239, 233, 0.8);
   margin-bottom: 12px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .form__input {
@@ -83,6 +125,16 @@
   font-size: 12px;
   line-height: 14px;
   color: rgb(255, 255, 255, 0.9);
+
+  @media (min-width: $tablet-width) {
+    line-height: 12px;
+  }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .form__button {
@@ -96,6 +148,11 @@
   color: $basic-white;
   border-color: $basic-white;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 31px;
+    padding-right: 69px;
+  }
 
   &::before {
     background-color: $basic-white;
