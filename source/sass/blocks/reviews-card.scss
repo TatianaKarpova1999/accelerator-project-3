@@ -3,6 +3,12 @@
   padding-bottom: 22px;
   border: 2px solid $basic-blue;
   border-radius: 16px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    padding: 52px;
+  }
 
   dl {
     margin: 0;
@@ -11,6 +17,12 @@
     grid-column: 1/3;
     max-width: 200px;
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-left: 65px;
+      column-gap: 25px;
+    }
   }
 
   dt {
@@ -19,6 +31,10 @@
     text-transform: uppercase;
     color: $basic-blue;
     margin-bottom: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 11px;
+    }
   }
 
   dd {
@@ -33,6 +49,10 @@
     line-height: 20px;
     margin: 0;
     margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -42,6 +62,21 @@
   column-gap: 10px;
   row-gap: 15px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  picture {
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      height: 90px;
+    }
+  }
 }
 
 .reviews-card__title {
@@ -51,6 +86,11 @@
   color: $basic-blue;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .reviews__name {
@@ -59,4 +99,9 @@
   color: $basic-blue;
   max-width: 40px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
