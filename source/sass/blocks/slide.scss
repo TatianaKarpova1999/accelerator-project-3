@@ -91,6 +91,10 @@
     background-repeat: no-repeat;
     top: 100%;
     right: 15px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -113,12 +117,13 @@
   &::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background-image: url("../__spritemap#sprite-corner-view");
+    width: 26px;
+    height: 26px;
+    background-image: url("../__spritemap#sprite-corner-news-view");
     background-repeat: no-repeat;
     top: 0;
     left: 100%;
+    transform: rotate(90deg);
   }
 }
 

@@ -4,12 +4,25 @@
   padding: 40px 20px;
   padding-top: 42px;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 70px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .advantages__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 52px;
+    row-gap: 54px;
+  }
 }
 
 .advantages__item {
@@ -20,6 +33,11 @@
   margin-bottom: 22px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding: 21px;
+    margin-bottom: 0;
+  }
+
   h3 {
     font-weight: 400;
     font-size: 16px;
@@ -27,6 +45,11 @@
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 
   p {
@@ -36,6 +59,13 @@
     text-transform: lowercase;
     margin: 0;
     margin-bottom: 10px;
+    color: $basic-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
   }
 
   &:last-child {
