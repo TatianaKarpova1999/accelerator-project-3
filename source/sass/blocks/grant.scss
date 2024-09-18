@@ -7,6 +7,11 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 70px 15px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 100px 45px;
+  }
 }
 
 .grant__title {
@@ -15,6 +20,10 @@
   color: $basic-white;
   margin-bottom: 15px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .grant__info {
@@ -24,11 +33,22 @@
     color: $basic-white;
     margin: 0;
     margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 498px;
+      margin-bottom: 40px;
+    }
   }
 }
 
 .grant__image {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .grant__conditions-title {
@@ -38,6 +58,12 @@
   color: $basic-white;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 45px;
+  }
 }
 
 .grant__list {
@@ -45,6 +71,13 @@
   padding-left: 15px;
   list-style-type: none;
   counter-reset: num;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+    column-gap: 48px;
+  }
 }
 
 .grant__item {
@@ -54,11 +87,20 @@
   margin-bottom: 15px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding: 31px 26px;
+    margin-bottom: 0;
+  }
+
   p {
     margin: 0;
     color: $basic-grey;
     font-size: 14px;
     line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
   }
 
   &:last-child {
