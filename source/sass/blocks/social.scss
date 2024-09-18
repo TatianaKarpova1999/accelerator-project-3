@@ -7,6 +7,11 @@
   max-width: 98px;
   column-gap: 10px;
   order: 2;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/4;
+    max-width: 128px;
+  }
 }
 
 .social__link {
@@ -17,4 +22,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
 }
