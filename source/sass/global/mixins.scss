@@ -32,6 +32,11 @@
     top: 50%;
     transform: translateY(-50%);
     right: 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
   }
 }
 
@@ -71,5 +76,9 @@
     transform: translateY(-50%);
     right: 18px;
     background-color: $basic-white;
+
+    @media (min-width: $tablet-width) {
+      right: 22px;
+    }
   }
 }
