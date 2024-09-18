@@ -3,6 +3,11 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 50px 15px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 50px 45px;
+  }
 }
 
 .news__title {
@@ -22,6 +27,12 @@
   text-transform: uppercase;
   padding: 8px 16px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 22px;
+  }
+
   &--current {
     border: 2px solid $basic-blue;
     border-radius: 20px;
@@ -31,4 +42,11 @@
 
 .news__tabs {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
 }
