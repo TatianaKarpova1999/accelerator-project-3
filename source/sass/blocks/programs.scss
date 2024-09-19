@@ -12,6 +12,12 @@
     row-gap: 40px;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 60px 100px;
+    justify-content: space-between;
+  }
 }
 
 .programs__title {
@@ -54,5 +60,9 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
   }
 }
