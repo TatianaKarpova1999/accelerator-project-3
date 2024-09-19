@@ -213,7 +213,6 @@
   max-width: 200px;
   border-radius: 0 12px 0 0;
   position: relative;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -230,6 +229,7 @@
     max-width: 408px;
     padding-right: 29px;
     padding-top: 18px;
+    box-sizing: border-box;
   }
 
   &::before {
