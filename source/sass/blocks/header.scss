@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .header__wrapper {
@@ -22,6 +26,12 @@
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding: 30px 45px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 30px 100px;
     padding-bottom: 0;
   }
 }
