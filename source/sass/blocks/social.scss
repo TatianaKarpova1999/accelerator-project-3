@@ -12,6 +12,12 @@
     grid-row: 2/4;
     max-width: 128px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 3;
+    margin-left: auto;
+  }
 }
 
 .social__link {
