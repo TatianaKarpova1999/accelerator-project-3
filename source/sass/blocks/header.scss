@@ -44,17 +44,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .header__nav {
   position: relative;
+  margin-left: auto;
 
   &--close::before,
   &--open::before {
     content: "";
     position: absolute;
-    width: 34px;
-    height: 34px;
+    width: 46px;
+    height: 46px;
     background-color: $basic-blue;
     border-radius: 50%;
     top: 50%;
@@ -62,11 +68,6 @@
     right: 5px;
     z-index: 1;
     cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      width: 46px;
-      height: 46px;
-    }
   }
 
   &--close .header__list {
@@ -74,15 +75,18 @@
     opacity: 0;
     visibility: visible;
     margin: 0;
-    transition: 0.6s;
+    transition: 0.3s;
   }
 
   &--open .header__list {
     display: block;
-    max-width: 286px;
     opacity: 1;
-    transition: 0.6s;
+    transition: 0.3s;
     height: auto;
+
+    @media (min-width: $tablet-width) {
+      max-width: 286px;
+    }
   }
 
   &--open::before {
@@ -150,7 +154,7 @@
   padding: 20px;
   padding-right: 70px;
   position: relative;
-  transition: 0.6s;
+  transition: 0.3s;
   text-align: left;
 
   &--close::before {
@@ -170,8 +174,12 @@
   &--open {
     background-color: $basic-blue;
     color: $basic-white;
-    padding-right: 222px;
-    transition: 0.6s;
+    padding-right: 226px;
+    transition: 0.3s;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 222px;
+    }
   }
 
   &--open::after,
@@ -181,7 +189,7 @@
     width: 24px;
     height: 1px;
     background-color: $basic-blue;
-    right: 16px;
+    right: 15px;
     transform: rotate(45deg);
     z-index: 2;
     top: 50%;
