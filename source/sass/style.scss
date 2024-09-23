@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/pagination";
 
 /* GLOBAL */
 @import "global/variables";
@@ -13,6 +14,7 @@
 /* BLOCKS */
 @import "blocks/page-body";
 @import "blocks/header";
+@import "blocks/header-content";
 @import "blocks/slide";
 @import "blocks/about";
 @import "blocks/advantages";
