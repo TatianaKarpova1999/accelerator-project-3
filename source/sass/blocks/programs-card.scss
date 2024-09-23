@@ -9,8 +9,13 @@
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
+    min-height: 420px;
     padding: 10px 20px;
     padding-top: 285px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 382px;
   }
 
   &--one,

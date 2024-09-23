@@ -2,3 +2,4 @@
 
 import '../js/navigation';
 import '../js/main-slider';
+import '../js/programs';

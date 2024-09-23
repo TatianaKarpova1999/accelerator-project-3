@@ -70,40 +70,6 @@
       background-image: url("../../img/hero-desktop-3@2x.webp");
     }
   }
-
-  &::before {
-    content: "";
-    display: flex;
-    column-gap: 12px;
-    padding: 10px 16px;
-    background-color: #ffffff;
-    border-radius: 20px 20px 0 0;
-    z-index: 1;
-    position: absolute;
-    top: 201px;
-    left: calc(50% - 145px);
-    width: 80px;
-    height: 28px;
-    box-sizing: border-box;
-
-    @media (min-width: 768px) {
-      column-gap: 12px;
-      padding: 14px 20px;
-      background-color: #ffffff;
-      top: 595px;
-      left: calc(50% - 339px);
-      width: 100px;
-      height: 40px;
-    }
-
-    @media (min-width: 1440px) {
-      column-gap: 12px;
-      padding: 14px 20px;
-      background-color: #ffffff;
-      top: 393px;
-      left: calc(50% - 620px);
-    }
-  }
 }
 
 .slide__wrapper {
