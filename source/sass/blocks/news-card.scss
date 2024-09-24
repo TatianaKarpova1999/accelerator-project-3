@@ -1,5 +1,4 @@
 .news-card {
-  padding-top: 186px;
   padding-right: 27px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,16 +6,23 @@
   position: relative;
   border-radius: 12px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  min-height: 330px;
+
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
-    padding-top: 101px;
     padding-right: 84px;
+    min-height: 350px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 286px;
     padding-right: 46px;
+    min-height: 400px;
   }
 
   p {

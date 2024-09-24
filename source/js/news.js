@@ -1,9 +1,10 @@
 import Swiper from 'swiper';
-import {Navigation, Pagination} from 'swiper/modules';
+import {Navigation, Pagination, Grid} from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/grid';
 
 new Swiper('.swiper-news', {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Grid],
   loop: false,
 
   pagination: {
@@ -25,12 +26,20 @@ new Swiper('.swiper-news', {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 15,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
 
     768: {
       allowTouchMove: true,
       slidesPerView: 2,
       slidesPerGroup: 1,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
       spaceBetween: 30,
     },
 
