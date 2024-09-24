@@ -1,10 +1,15 @@
 import Swiper from 'swiper';
-import {Navigation} from 'swiper/modules';
+import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 
 new Swiper('.swiper-programs', {
-  modules: [Navigation],
-  loop: true,
+  modules: [Navigation, Pagination],
+  loop: false,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
 
   navigation: {
     nextEl: '.swiper-button-next',
