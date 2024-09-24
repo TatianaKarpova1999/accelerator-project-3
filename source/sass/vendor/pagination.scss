@@ -92,3 +92,35 @@
     transform-origin: left top;
   }
 }
+
+.swiper-pagination-news {
+  height: 26px;
+  width: fit-content;
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
+  column-gap: 16px;
+
+  @media (min-width: 768px) {
+    column-gap: 20px;
+  }
+
+  & .swiper-pagination-bullet {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: rgb(49, 109, 194, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+  }
+
+  & .swiper-pagination-bullet-active {
+    color: #ffffff;
+    background-color: #316dc2;
+  }
+}
