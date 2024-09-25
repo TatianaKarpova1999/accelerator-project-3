@@ -110,29 +110,70 @@
   border-radius: 16px;
 }
 
-.header__programs-list {
+.header__sublist {
   list-style-type: none;
   margin: 0;
-  margin-top: 5px;
   padding-left: 16px;
+  overflow: none;
+  opacity: 0;
+  visibility: visible;
+  height: 0;
+  transition: all 0.1s linear;
+
+  &--open {
+    transition: all 0.1s linear;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    margin-top: 5px;
+  }
 }
 
-.header__programs-item {
+.header__subitem {
   margin-bottom: 7px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  .header__link {
+    text-transform: none;
+    font-weight: 400;
+  }
 }
 
-.header__link,
-.header__programs-link {
+.header__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  position: relative;
+
+  &--programs::before,
+  &--news::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    mask-image: url("../__spritemap#sprite-arr-menu-view");
+    mask-repeat: no-repeat;
+    mask-size: 10px 7px;
+    background-color: rgb(255, 255, 255, 0.6);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+  }
+
+  &--open::before {
+    background-color: $basic-white;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  &--open {
+    color: $basic-white;
+  }
 }
 
 .header__item {

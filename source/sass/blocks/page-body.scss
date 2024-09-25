@@ -1,10 +1,6 @@
 .page-body {
   position: relative;
 
-  &--overlay {
-    overflow: hidden;
-  }
-
   &--overlay .header__logo::before {
     content: "";
     position: absolute;
