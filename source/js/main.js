@@ -6,3 +6,4 @@ import '../js/programs';
 import '../js/tabs';
 import '../js/news';
 import '../js/faq';
+import '../js/reviews';

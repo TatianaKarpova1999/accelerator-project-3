@@ -128,3 +128,10 @@
 .news__list .swiper-slide {
   display: flex;
 }
+
+.reviews .swiper-nav-container {
+  @media (min-width: 768px) {
+    padding-right: 0;
+  }
+
+}

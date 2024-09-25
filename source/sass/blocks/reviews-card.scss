@@ -4,15 +4,18 @@
   border: 2px solid $basic-blue;
   border-radius: 16px;
   box-sizing: border-box;
+  min-height: 472px;
 
   @media (min-width: $tablet-width) {
     max-width: 560px;
     padding: 52px;
+    min-height: 417px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 46px;
     max-width: 604px;
+    min-height: 483px;
   }
 
   dl {

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 55px 15px;
   padding-bottom: 50px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -27,6 +28,24 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.reviews__slider {
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
 }
