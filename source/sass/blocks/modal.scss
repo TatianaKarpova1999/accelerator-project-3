@@ -1,0 +1,35 @@
+.modal {
+  &--close {
+    opacity: 0;
+    visibility: visible;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 23px;
+    z-index: 4;
+    transition: 0.3s opacity;
+  }
+
+  &--open {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 23px;
+    z-index: 4;
+    transition: 0.3s opacity;
+  }
+}
+
+.modal__wrapper {
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 510px;
+  }
+}

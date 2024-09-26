@@ -1,7 +1,8 @@
 .page-body {
   position: relative;
 
-  &--overlay .header__logo::before {
+  &--overlay .header__logo::before,
+  &--modal .header__logo::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -11,12 +12,21 @@
     border-radius: 50%;
   }
 
-  &--overlay::before {
+  &--modal .header__logo::before {
+    display: none;
+  }
+
+  &--overlay::before,
+  &--modal::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: $overlay;
     z-index: 2;
+  }
+
+  &--modal::before {
+    z-index: 3;
   }
 }

@@ -8,6 +8,137 @@
   @media (min-width: $desktop-width) {
     padding: 60px 100px;
   }
+
+  &--modal {
+    padding: 0;
+  }
+
+  &--modal .form__content {
+    background-color: $basic-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+  }
+
+  &--modal .form__title {
+    line-height: 18px;
+    color: $basic-blue;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--modal .form__text {
+    color: $basic-black;
+    text-align: center;
+    max-width: 220px;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 350px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--modal .form__label {
+    color: rgb(72, 72, 72, 0.8);
+    margin-bottom: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &--modal .form__input {
+    height: 44px;
+    border-color: rgb(72, 72, 72, 0.3);
+
+    @media (min-width: $tablet-width) {
+      height: 50px;
+    }
+  }
+
+  &--modal .form__item {
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 25px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &--modal .form__agreement {
+    color: rgb(72, 72, 72, 0.9);
+  }
+
+  &--modal .form__agreement br {
+    display: none;
+  }
+
+  &--modal .form__agreement::before {
+    background-color: $basic-blue;
+  }
+
+  &--modal .form__button {
+    border-color: $basic-blue;
+    color: $basic-blue;
+  }
+
+  &--modal .form__button::before {
+    background-color: $basic-blue;
+  }
+
+  &--modal .form__button::after {
+    background-color: $basic-white;
+  }
+
+  &--modal .form__toggle {
+    width: 15px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 22px;
+      top: 30px;
+      right: 30px;
+    }
+  }
+
+  &--modal .form__toggle::before,
+  &--modal .form__toggle::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    background-color: $basic-blue;
+    top: 0;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+
+  &--modal .form__toggle::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .form__wrapper {
@@ -223,3 +354,4 @@
     transform: translateY(-50%);
   }
 }
+

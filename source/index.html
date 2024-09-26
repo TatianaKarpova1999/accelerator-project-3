@@ -582,6 +582,49 @@
         <a class="footer__protection" href="#">Политика конфиденциальности</a>
       </div>
     </footer>
+
+    <div class="modal modal--close">
+      <div class="modal__wrapper form form--modal">
+        <button class="form__toggle" type="button" aria-label="Закрыть модальное окно"></button>
+        <div class="form__content">
+          <h2 class="form__title">Напишите нам</h2>
+          <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+          <div class="form__container">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="name">Имя</label>
+                  <input class="form__input" type="text" id="name" name="name" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="phone">Телефон</label>
+                  <input class="form__input" type="tel" id="phone" name="phone" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="comment">Ваше сообщение</label>
+                  <textarea class="form__input" id="comment" name="comment"></textarea>
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="city">Выберете город</label>
+                  <select class="form__input" name="city" id="city" required>
+                    <option selected disabled label=" "></option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
+                    <option value="Saint Petersburg">Санкт-Петербург</option>
+                  </select>
+                </li>
+                <li class="form__item form__item--checkbox">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required>
+                  <label class="form__agreement" for="agreement">Я согласен на обработку моих персональных<br> данных</label>
+                </li>
+              </ul>
+              <button class="form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
