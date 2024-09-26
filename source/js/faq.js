@@ -13,6 +13,11 @@ item.forEach((element) => {
       element.classList.add('faq__item--current');
       button.classList.add('faq__button--current');
     }
+
+    if (button.attributes.disabled) {
+      element.classList.remove('faq__item--current');
+      button.classList.remove('faq__button--current');
+    }
   });
 });
 

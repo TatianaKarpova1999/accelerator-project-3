@@ -88,6 +88,21 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  &:hover {
+    color: rgb(49, 109, 194, 0.7);
+    transition: 0.1s;
+  }
+
+  &:focus-visible {
+    color: $basic-blue;
+    outline: none;
+    transition: 0.1s;
+  }
+
+  &:active {
+    color: $button-active;
+  }
 }
 
 .footer__copyright {
@@ -137,6 +152,24 @@
     font-size: 14px;
     line-height: 18px;
     max-width: 212px;
+  }
+
+  &:hover {
+    color: rgb(49, 109, 194, 0.7);
+    transition: 0.1s;
+    border-color: rgb(49, 109, 194, 0.7);
+  }
+
+  &:focus-visible {
+    color: $basic-blue;
+    outline: none;
+    transition: 0.1s;
+    border-color: $basic-blue;
+  }
+
+  &:active {
+    color: $button-active;
+    border-color: $button-active;
   }
 }
 

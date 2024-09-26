@@ -120,4 +120,40 @@
   &::after {
     right: 11px;
   }
+
+  &:hover,
+  &:active {
+    background-color: $basic-white;
+    transition: 0.1s;
+  }
+
+  &:hover::after {
+    background-color: $basic-blue;
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.1s;
+  }
+
+  &:active::after {
+    background-color: rgb(49, 109, 194, 0.7);
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.1s;
+  }
+
+  &[aria-disabled="true"] {
+    background-color: $disabled;
+    pointer-events: none;
+  }
+
+  &[aria-disabled="true"]::after {
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.1s;
+  }
 }

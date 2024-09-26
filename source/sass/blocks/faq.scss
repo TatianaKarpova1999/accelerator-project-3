@@ -160,4 +160,62 @@
   &--current::after {
     display: none;
   }
+
+  &:hover,
+  &:focus-visible {
+    background-color: transparent;
+    border: 1px solid $basic-blue;
+    transition: 0.1s;
+    outline: none;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $basic-blue;
+  }
+
+  &:focus-visible::before,
+  &:focus-visible::after {
+    background-color: $basic-blue;
+  }
+
+  &:active {
+    background-color: $button-active;
+    border: none;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $basic-white;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &:disabled::before,
+  &:disabled::after {
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+
+  &--current:hover {
+    background-color: transparent;
+    border: 1px solid $basic-white;
+    transition: 0.1s;
+    outline: none;
+  }
+
+  &--current:hover::before {
+    background-color: $basic-white;
+  }
+
+  &--current:active {
+    background-color: $basic-white;
+  }
+
+  &--current:active::before {
+    background-color: $button-active;
+  }
 }

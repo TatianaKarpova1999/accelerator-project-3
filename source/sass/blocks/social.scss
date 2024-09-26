@@ -33,4 +33,29 @@
     width: 36px;
     height: 36px;
   }
+
+  &:hover .social__icon {
+    fill: rgb(255, 255, 255, 0.7);
+    transition: 0.1s;
+  }
+
+  &:focus-visible {
+    background-color: $basic-white;
+    transition: 0.1s;
+    outline: none;
+  }
+
+  &:focus-visible .social__icon {
+    fill: $basic-blue;
+    transition: 0.1s;
+  }
+
+  &:active {
+    background-color: $button-active;
+    transition: 0.1s;
+  }
+}
+
+.social__icon {
+  fill: $basic-white;
 }

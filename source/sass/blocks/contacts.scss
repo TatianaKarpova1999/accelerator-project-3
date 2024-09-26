@@ -124,5 +124,23 @@
     line-height: 26px;
     max-width: 263px;
   }
-}
 
+  &--tel:hover,
+  &--mail:hover {
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  &--tel:focus-visible,
+  &--mail:focus-visible {
+    color: $basic-black;
+    outline: none;
+    border-bottom: 1px solid $basic-black;
+  }
+
+  &--tel:active,
+  &--mail:active {
+    color: $basic-white;
+    outline: none;
+    border-bottom: 1px solid $basic-white;
+  }
+}
