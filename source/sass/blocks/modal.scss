@@ -9,6 +9,7 @@
     transform: translateX(-50%);
     top: 23px;
     z-index: 4;
+    height: 0;
     transition: 0.3s opacity;
   }
 
@@ -22,7 +23,16 @@
     transform: translateX(-50%);
     top: 23px;
     z-index: 4;
+    height: auto;
     transition: 0.3s opacity;
+  }
+
+  &--close .form__container {
+    display: none;
+  }
+
+  &--open .form__container {
+    display: block;
   }
 }
 

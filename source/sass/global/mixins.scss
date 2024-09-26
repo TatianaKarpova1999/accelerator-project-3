@@ -40,6 +40,116 @@
   }
 }
 
+@mixin light-button {
+  &:hover {
+    background-color: $basic-blue;
+    color: $basic-white;
+    transition: 0.1s;
+  }
+
+  &:hover::before,
+  &:active::before {
+    background-color: $basic-white;
+    transition: 0.1s;
+  }
+
+  &:hover::after,
+  &:active::after {
+    background-color: $basic-blue;
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.1s;
+    right: 24px;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.7);
+    background-color: $basic-blue;
+  }
+
+  &:active::after {
+    background-color: rgb(49, 109, 194, 0.7);
+  }
+
+  &[aria-disabled="true"] {
+    background-color: transparent;
+    color: $disabled;
+    border-color: $disabled;
+    pointer-events: none;
+  }
+
+  &[aria-disabled="true"]::after {
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+
+  &[aria-disabled="true"]::before {
+    background-color: $disabled;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.1s;
+  }
+}
+
+@mixin blue-button {
+  &:hover {
+    background-color: $basic-white;
+    color: $basic-blue;
+    transition: 0.1s;
+  }
+
+  &:hover::before,
+  &:active::before {
+    background-color: $basic-blue;
+    transition: 0.1s;
+  }
+
+  &:hover::after,
+  &:active::after {
+    background-color: $basic-white;
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.1s;
+    right: 24px;
+  }
+
+  &:active {
+    color: rgb(49, 109, 194, 0.7);
+    background-color: $basic-blue;
+  }
+
+  &:active::after {
+    background-color: rgb(255, 255, 255, 0.7);
+  }
+
+  &[aria-disabled="true"] {
+    background-color: transparent;
+    color: $disabled;
+    border-color: $disabled;
+    pointer-events: none;
+  }
+
+  &[aria-disabled="true"]::after {
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+
+  &[aria-disabled="true"]::before {
+    background-color: $disabled;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    transform: rotate(45deg) translateY(-50%);
+    transition: 0.1s;
+  }
+}
+
 // Заголовки
 @mixin h2 {
   font-weight: 400;

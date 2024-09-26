@@ -99,6 +99,7 @@
 .about__link {
   @include button;
   @include arr-thick;
+  @include light-button;
 
   text-decoration: none;
   padding: 13px 21px;

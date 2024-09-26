@@ -11,6 +11,7 @@
 
   &--modal {
     padding: 0;
+    height: 100%;
   }
 
   &--modal .form__content {
@@ -92,6 +93,8 @@
   }
 
   &--modal .form__button {
+    @include light-button;
+
     border-color: $basic-blue;
     color: $basic-blue;
   }
@@ -316,6 +319,7 @@
 .form__button {
   @include button;
   @include arr-thick;
+  @include blue-button;
 
   padding: 16px 31px;
   padding-right: 69px;

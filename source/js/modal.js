@@ -21,4 +21,4 @@ body.addEventListener('click', (evt) => {
     modal.classList.add('modal--close');
     body.classList.remove('page-body--modal');
   }
-})
+});
