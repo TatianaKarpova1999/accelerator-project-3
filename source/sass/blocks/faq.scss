@@ -95,6 +95,70 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $basic-white;
+    transition: 0.1s;
+    outline: none;
+  }
+
+  &:hover .faq__button {
+    background-color: transparent;
+    border: 1px solid $basic-blue;
+    transition: 0.1s;
+    outline: none;
+  }
+
+  &:hover .faq__button::before,
+  &:hover .faq__button::after {
+    background-color: $basic-blue;
+  }
+
+  &:active {
+    background-color: $basic-white;
+    transition: 0.1s;
+  }
+
+  &:active .faq__button {
+    background-color: $button-active;
+    border: none;
+  }
+
+  &:active .faq__button::before,
+  &:active .faq__button::after {
+    background-color: $basic-white;
+  }
+
+  &--current:hover,
+  &--current:focus-visible {
+    background-color: $basic-blue;
+    box-shadow: 0 0 0 2px $basic-white;
+  }
+
+  &--current:hover .faq__button {
+    background-color: transparent;
+    border: 1px solid $basic-white;
+    transition: 0.1s;
+    outline: none;
+  }
+
+  &--current:hover .faq__button::before {
+    background-color: $basic-white;
+  }
+
+  &--current:active {
+    background-color: $button-active;
+    transition: 0.1s;
+  }
+
+  &--current:active .faq__button {
+    background-color: $basic-white;
+  }
+
+  &--current:active .faq__button::before {
+    background-color: $button-active;
+  }
 }
 
 .faq__content-title {
@@ -161,7 +225,6 @@
     display: none;
   }
 
-  &:hover,
   &:focus-visible {
     background-color: transparent;
     border: 1px solid $basic-blue;
@@ -169,23 +232,20 @@
     outline: none;
   }
 
-  &:hover::before,
-  &:hover::after {
-    background-color: $basic-blue;
-  }
-
   &:focus-visible::before,
   &:focus-visible::after {
     background-color: $basic-blue;
   }
 
-  &:active {
-    background-color: $button-active;
-    border: none;
+  &--current:focus-visible {
+    outline: none;
+    border: 1px solid $basic-white;
+    background-color: transparent;
+    transition: 0.1s;
   }
 
-  &:active::before,
-  &:active::after {
+  &--current:focus-visible::before,
+  &--current:focus-visible::after {
     background-color: $basic-white;
   }
 
@@ -198,24 +258,5 @@
   &:disabled::before,
   &:disabled::after {
     background-color: rgb(255, 255, 255, 0.6);
-  }
-
-  &--current:hover {
-    background-color: transparent;
-    border: 1px solid $basic-white;
-    transition: 0.1s;
-    outline: none;
-  }
-
-  &--current:hover::before {
-    background-color: $basic-white;
-  }
-
-  &--current:active {
-    background-color: $basic-white;
-  }
-
-  &--current:active::before {
-    background-color: $button-active;
   }
 }

@@ -41,6 +41,7 @@
   color: rgb(49, 109, 194, 0.6);
   text-transform: uppercase;
   padding: 8px 16px;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -52,6 +53,18 @@
     border: 2px solid $basic-blue;
     border-radius: 20px;
     color: $basic-blue;
+  }
+
+  &:hover {
+    color: $basic-blue;
+    transition: 0.1s;
+  }
+
+  &:focus-visible {
+    background-color: $basic-white;
+    color: $basic-blue;
+    transition: 0.1s;
+    outline: none;
   }
 }
 

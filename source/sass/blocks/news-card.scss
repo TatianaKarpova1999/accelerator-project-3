@@ -293,6 +293,7 @@
 
 .news-card__link {
   @include arr-thick;
+  @include link;
 
   width: 30px;
   height: 30px;
