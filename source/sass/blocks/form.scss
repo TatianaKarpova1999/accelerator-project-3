@@ -142,6 +142,12 @@
   &--modal .form__toggle::after {
     transform: rotate(-45deg);
   }
+
+  &--modal .form__checkbox {
+    &:checked + .form__agreement::after {
+      background-color: $basic-white;
+    }
+  }
 }
 
 .form__wrapper {
@@ -283,6 +289,31 @@
   font-size: 14px;
   line-height: 14px;
   color: $basic-grey;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus-visible {
+    box-shadow: 0 0 0 1px $basic-white;
+    background-color: transparent;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 1px rgb(255, 255, 255, 0.4);
+    pointer-events: none;
+  }
+
+  &--error {
+    background-color: rgb(255, 94, 102, 0.2);
+    box-shadow: 0 0 0 1px $error;
+  }
+
+  &--error + .form__agreement::before {
+    background-color: rgb(255, 94, 102, 0.2);
+    box-shadow: 0 0 0 1px $error;
+  }
 }
 
 .form__agreement {
@@ -308,11 +339,16 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: $basic-white;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255, 0.7);
     border-radius: 2px;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    box-shadow: 0 0 0 1px $basic-white;
   }
 }
 
@@ -356,6 +392,42 @@
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  &:checked + .form__agreement::before {
+    background-color: $basic-white;
+    box-shadow: none;
+  }
+
+  &:checked:focus-visible + .form__agreement::before,
+  &:checked:hover + .form__agreement::before {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px $basic-white;
+  }
+
+  &:checked:focus-visible + .form__agreement::after,
+  &:checked:hover + .form__agreement::after {
+    background-color: $basic-white;
+  }
+
+  &:checked:disabled + .form__agreement::before {
+    background-color: $disabled;
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  &:checked:disabled + .form__agreement::after {
+    background-color: rgb(255, 255, 255, 0.7);
+  }
+
+  &:disabled + .form__agreement::before {
+    box-shadow: 0 0 0 1px $basic-white;
+    background-color: rgb(255, 255, 255, 0.6);
+    pointer-events: none;
+  }
+
+  &:disabled + .form__agreement {
+    cursor: default;
   }
 }
 

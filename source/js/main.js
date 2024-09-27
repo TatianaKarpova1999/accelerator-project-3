@@ -8,3 +8,4 @@ import '../js/news';
 import '../js/faq';
 import '../js/reviews';
 import '../js/modal';
+import '../js/form';
