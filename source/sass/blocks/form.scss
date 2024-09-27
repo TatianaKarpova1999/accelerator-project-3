@@ -58,10 +58,47 @@
   &--modal .form__input {
     height: 44px;
     border-color: rgb(72, 72, 72, 0.3);
+    color: $basic-black;
 
     @media (min-width: $tablet-width) {
       height: 50px;
     }
+  }
+
+  &--modal .form__input:hover,
+  &--modal .form__input:active,
+  &--modal .form__input:focus-visible {
+    box-shadow: 0 0 0 1px $basic-black;
+    background-color: transparent;
+    outline: none;
+  }
+
+  &--modal .form__input:disabled {
+    background-color: rgb(169, 175, 183, 0.2);
+    box-shadow: 0 0 0 1px rgb(169, 175, 183, 0.5);
+    pointer-events: none;
+  }
+
+  &--modal .form__input--error {
+    background-color: rgb(255, 94, 102, 0.2);
+    box-shadow: 0 0 0 1px $error;
+  }
+
+  &--modal .form__input--error::before {
+    background-color: rgb(255, 94, 102, 0.2);
+    box-shadow: 0 0 0 1px $error;
+  }
+
+  &--modal .form__input:checked + .form__agreement::before {
+    background-color: $basic-blue;
+  }
+
+  &--modal .form__input:checked:hover:not(:disabled) + .form__agreement::before {
+    box-shadow: 0 0 0 1px $basic-blue;
+  }
+
+  &--modal .form__input:checked:hover:not(:disabled) + .form__agreement::after {
+    background-color: $basic-blue;
   }
 
   &--modal .form__item {
@@ -89,7 +126,17 @@
   }
 
   &--modal .form__agreement::before {
-    background-color: $basic-blue;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px rgb(49, 109, 194, 0.7);
+  }
+
+  &--modal .form__agreement:hover::before {
+    box-shadow: 0 0 0 1px $basic-blue;
+  }
+
+  &--modal .form__checkbox:disabled + .form__agreement::before {
+    box-shadow: 0 0 0 1px $basic-blue;
+    background-color: rgb(49, 109, 194, 0.6);
   }
 
   &--modal .form__button {
@@ -97,6 +144,10 @@
 
     border-color: $basic-blue;
     color: $basic-blue;
+
+    @media (min-width: $tablet-width) {
+      max-width: 194px;
+    }
   }
 
   &--modal .form__button::before {
@@ -194,6 +245,12 @@
     max-width: 490px;
     padding: 40px 70px;
     padding-top: 44px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

@@ -1,6 +1,9 @@
 const form = document.querySelector('.form__content');
 const formInput = form.querySelectorAll('.form__input');
 const submitButton = document.querySelector('.form__button');
+const formModal = document.querySelector('.form--modal');
+const formInputModal = formModal.querySelectorAll('.form__input');
+const submitButtonModal = formModal.querySelector('.form__button');
 
 window.addEventListener('DOMContentLoaded', () => {
   [].forEach.call(document.querySelectorAll('.form__input--tel'), (input) => {
@@ -41,6 +44,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
 submitButton.addEventListener('click', () => {
   formInput.forEach ((input) => {
+    if(!input.checkValidity()) {
+      input.classList.add('form__input--error');
+    } else {
+      input.classList.remove('form__input--error');
+    }
+  });
+});
+
+submitButtonModal.addEventListener('click', () => {
+  formInputModal.forEach ((input) => {
     if(!input.checkValidity()) {
       input.classList.add('form__input--error');
     } else {
