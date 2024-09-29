@@ -2,12 +2,14 @@ import Swiper from 'swiper';
 import {Pagination} from 'swiper/modules';
 import 'swiper/css';
 
+
 new Swiper('.swiper-hero', {
   modules: [Pagination],
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination-hero',
+    el: Array.from(document.querySelectorAll('.swiper-pagination-hero')),
+    clickable: false,
   },
 
   breakpoints: {

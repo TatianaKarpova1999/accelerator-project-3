@@ -45,7 +45,7 @@ new Swiper('.swiper-news', {
 
     1440: {
       allowTouchMove: false,
-      slidesPerView: 'auto',
+      slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 28,
     },

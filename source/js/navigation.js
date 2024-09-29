@@ -19,12 +19,12 @@ body.addEventListener('click', (evt) => {
     body.classList.remove('page-body--overlay');
   }
 
-  if (evt.target.className === 'header__link header__link--programs' || evt.target.className === 'header__link header__link--news') {
-    evt.target.nextElementSibling.classList.add('header__sublist--open');
-    evt.target.classList.add('header__link--open');
-  } else {
-    evt.target.nextElementSibling.classList.remove('header__sublist--open');
-    evt.target.classList.remove('header__link--open');
-  }
+  // if (evt.target.className === 'header__link header__link--programs' || evt.target.className === 'header__link header__link--news') {
+  //   evt.target.nextElementSibling.classList.add('header__sublist--open');
+  //   evt.target.classList.add('header__link--open');
+  // } else {
+  //   evt.target.nextElementSibling.classList.remove('header__sublist--open');
+  //   evt.target.classList.remove('header__link--open');
+  // }
 });
 
