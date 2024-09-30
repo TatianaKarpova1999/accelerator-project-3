@@ -2,6 +2,7 @@ const menu = document.querySelector('.header__nav');
 const button = document.querySelector('.header__toggle');
 const list = document.querySelector('.header__list');
 const body = document.querySelector('.page-body');
+const menuLink = list.querySelectorAll('.header__link');
 
 
 body.addEventListener('click', (evt) => {
@@ -18,13 +19,17 @@ body.addEventListener('click', (evt) => {
     button.classList.add('header__toggle--close');
     body.classList.remove('page-body--overlay');
   }
+});
 
-  // if (evt.target.className === 'header__link header__link--programs' || evt.target.className === 'header__link header__link--news') {
-  //   evt.target.nextElementSibling.classList.add('header__sublist--open');
-  //   evt.target.classList.add('header__link--open');
-  // } else {
-  //   evt.target.nextElementSibling.classList.remove('header__sublist--open');
-  //   evt.target.classList.remove('header__link--open');
-  // }
+menuLink.forEach((el) => {
+  el.addEventListener ('click', (evt) => {
+    if (evt.target.className === 'header__link header__link--programs' || evt.target.className === 'header__link header__link--news') {
+      evt.target.nextElementSibling.classList.add('header__sublist--open');
+      evt.target.classList.add('header__link--open');
+    } else if (evt.target.className === 'header__link header__link--programs header__link--open' || evt.target.className === 'header__link header__link--news header__link--open') {
+      evt.target.nextElementSibling.classList.remove('header__sublist--open');
+      evt.target.classList.remove('header__link--open');
+    }
+  });
 });
 
