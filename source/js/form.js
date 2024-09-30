@@ -70,3 +70,10 @@ formInput.forEach ((input) => {
   });
 });
 
+formInputModal.forEach ((input) => {
+  input.addEventListener('input', () => {
+    if (input.value.length > 0) {
+      input.classList.remove('form__input--error');
+    }
+  });
+});
