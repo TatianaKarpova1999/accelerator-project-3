@@ -39,7 +39,7 @@
 
     @media (min-width: $desktop-width) {
       line-height: 18px;
-      max-width: 404px;
+      max-width: 180px;
     }
   }
 
@@ -51,25 +51,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 604px;
-      padding-top: 231px;
-      padding-right: 136px;
       background-image: url("../../img/news-desktop-1@2x.webp");
-    }
-  }
-
-  &--one .news-card__title {
-    @media (min-width: $desktop-width) {
-      max-width: 408px;
-      padding: 18px;
-      padding-bottom: 6px;
-      padding-left: 0;
-    }
-  }
-
-  &--one .news-card__description {
-    @media (min-width: $desktop-width) {
-      max-width: 468px;
     }
   }
 
@@ -91,7 +73,6 @@
       padding: 10px 21px;
       padding-bottom: 4px;
       padding-left: 0;
-      max-width: 190px;
     }
   }
 
@@ -125,7 +106,6 @@
       padding: 10px 29px;
       padding-bottom: 4px;
       padding-left: 0;
-      max-width: 190px;
     }
   }
 
@@ -232,10 +212,10 @@
   @media (min-width: $desktop-width) {
     font-size: 24px;
     line-height: 26px;
-    max-width: 408px;
     padding-right: 29px;
     padding-top: 18px;
     box-sizing: border-box;
+    max-width: 190px;
   }
 
   &::before {
@@ -273,7 +253,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 468px;
+    min-width: 240px;
     padding-top: 12px;
     padding-bottom: 15px;
   }

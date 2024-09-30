@@ -10,8 +10,11 @@ new Swiper('.swiper-news', {
   pagination: {
     el: '.swiper-pagination-news',
     clickable: true,
+    type: 'bullets',
+    dynamicBullets: true,
+    dynamicMainBullets: 3,
     renderBullet: function (index, className) {
-      return `<span class="${ className }">${ index + 1 }</span>`;
+      return `<span class="${className}">${index + 1}</span>`;
     },
   },
 
@@ -45,9 +48,10 @@ new Swiper('.swiper-news', {
 
     1440: {
       allowTouchMove: false,
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       slidesPerGroup: 1,
       spaceBetween: 28,
     },
   }
 });
+
