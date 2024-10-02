@@ -27,11 +27,12 @@
     transition: 0.3s opacity;
   }
 
-  &--close .form__container {
+  &--close .modal__wrapper {
     display: none;
   }
 
-  &--open .form__container {
+
+  &--open .modal__wrapper {
     display: block;
   }
 }

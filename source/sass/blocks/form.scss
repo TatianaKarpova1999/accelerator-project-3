@@ -199,6 +199,10 @@
       background-color: $basic-white;
     }
   }
+
+  &--modal .form__label::before {
+    background-color: $basic-black;
+  }
 }
 
 .form__wrapper {
@@ -323,6 +327,7 @@
   color: rgb(240, 239, 233, 0.8);
   margin-bottom: 12px;
   display: block;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -331,6 +336,19 @@
 
   @media (min-width: $desktop-width) {
     line-height: 18px;
+  }
+
+  &--select::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    mask-image: url("../__spritemap#sprite-arr-menu-view");
+    mask-repeat: no-repeat;
+    mask-size: 20px 10px;
+    background-color: $basic-white;
+    top: 53px;
+    right: 20px;
   }
 }
 
@@ -485,6 +503,65 @@
 
   &:disabled + .form__agreement {
     cursor: default;
+  }
+}
+
+.form__select {
+  overflow: none;
+  opacity: 0;
+  visibility: visible;
+  height: 0;
+  margin: 0;
+  transition: all 0.1s linear;
+  z-index: -1;
+  list-style-type: none;
+  padding: 0;
+  background-color: $basic-white;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px $basic-white;
+
+  &--open {
+    transition: all 0.1s linear;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    margin-top: 4px;
+    z-index: 1;
+  }
+
+  &--modal {
+    box-shadow: 0 0 0 1px $basic-black;
+  }
+}
+
+.form__select-item {
+  padding: 17px 20px;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    color: $basic-blue;
+    transition: 0.1s;
+  }
+
+  &:active {
+    background-color: $basic-blue;
+    color: $basic-white;
+    transition: 0.1s;
+  }
+
+  &:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+
+  &--modal {
+    color: $basic-black;
   }
 }
 

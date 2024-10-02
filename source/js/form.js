@@ -1,9 +1,13 @@
 const form = document.querySelector('.form__content');
 const formInput = form.querySelectorAll('.form__input');
 const submitButton = document.querySelector('.form__button');
-const formModal = document.querySelector('.form--modal');
+const formModal = document.querySelector('.form__content--modal');
 const formInputModal = formModal.querySelectorAll('.form__input');
 const submitButtonModal = formModal.querySelector('.form__button');
+const selectList = document.querySelector('.form__select');
+const inputSelect = document.querySelector('.form__input--select');
+const selectListModal = document.querySelector('.form__select--modal');
+const inputSelectModal = document.querySelector('.form__input--select-modal');
 
 window.addEventListener('DOMContentLoaded', () => {
   [].forEach.call(document.querySelectorAll('.form__input--tel'), (input) => {
@@ -68,12 +72,53 @@ formInput.forEach ((input) => {
       input.classList.remove('form__input--error');
     }
   });
+
+  input.addEventListener('click', () => {
+    if (input.className === 'form__input form__input--select form__input--close' || input.className === 'form__input form__input--select form__input--close form__input--error') {
+      input.classList.add('form__input--open');
+      input.classList.remove('form__input--close');
+      selectList.classList.add('form__select--open');
+    } else if (input.className === 'form__input form__input--select form__input--open') {
+      input.classList.remove('form__input--open');
+      input.classList.add('form__input--close');
+      selectList.classList.remove('form__select--open');
+    }
+  });
+
+  selectList.addEventListener('click', (evt) => {
+    inputSelect.value = evt.target.innerHTML;
+    selectList.classList.remove('form__select--open');
+    input.classList.remove('form__input--open');
+    input.classList.add('form__input--close');
+    input.classList.remove('form__input--error');
+  });
 });
 
-formInputModal.forEach ((input) => {
-  input.addEventListener('input', () => {
-    if (input.value.length > 0) {
-      input.classList.remove('form__input--error');
+
+formInputModal.forEach ((modal) => {
+  modal.addEventListener('input', () => {
+    if (modal.value.length > 0) {
+      modal.classList.remove('form__input--error');
     }
+  });
+
+  modal.addEventListener('click', () => {
+    if (modal.className === 'form__input form__input--select form__input--select-modal form__input--close' || modal.className === 'form__input form__input--select form__input--select-modal form__input--close form__input--error') {
+      modal.classList.add('form__input--open');
+      modal.classList.remove('form__input--close');
+      selectListModal.classList.add('form__select--open');
+    } else if (modal.className === 'form__input form__input--select form__input--select-modal form__input--open') {
+      modal.classList.remove('form__input--open');
+      modal.classList.add('form__input--close');
+      selectListModal.classList.remove('form__select--open');
+    }
+  });
+
+  selectListModal.addEventListener('click', (evt) => {
+    inputSelectModal.value = evt.target.innerHTML;
+    modal.classList.remove('form__input--open');
+    modal.classList.remove('form__input--error');
+    modal.classList.add('form__input--close');
+    selectListModal.classList.remove('form__select--open');
   });
 });
