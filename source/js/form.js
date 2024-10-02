@@ -8,6 +8,8 @@ const selectList = document.querySelector('.form__select');
 const inputSelect = document.querySelector('.form__input--select');
 const selectListModal = document.querySelector('.form__select--modal');
 const inputSelectModal = document.querySelector('.form__input--select-modal');
+const formLabel = form.querySelector('.form__label--select');
+const formLabelModal = formModal.querySelector('.form__label--select');
 
 window.addEventListener('DOMContentLoaded', () => {
   [].forEach.call(document.querySelectorAll('.form__input--tel'), (input) => {
@@ -78,10 +80,12 @@ formInput.forEach ((input) => {
       input.classList.add('form__input--open');
       input.classList.remove('form__input--close');
       selectList.classList.add('form__select--open');
+      formLabel.classList.add('form__label--open');
     } else if (input.className === 'form__input form__input--select form__input--open') {
       input.classList.remove('form__input--open');
       input.classList.add('form__input--close');
       selectList.classList.remove('form__select--open');
+      formLabel.classList.remove('form__label--open');
     }
   });
 
@@ -91,6 +95,7 @@ formInput.forEach ((input) => {
     input.classList.remove('form__input--open');
     input.classList.add('form__input--close');
     input.classList.remove('form__input--error');
+    formLabel.classList.remove('form__label--open');
   });
 });
 
@@ -107,10 +112,12 @@ formInputModal.forEach ((modal) => {
       modal.classList.add('form__input--open');
       modal.classList.remove('form__input--close');
       selectListModal.classList.add('form__select--open');
+      formLabelModal.classList.add('form__label--open');
     } else if (modal.className === 'form__input form__input--select form__input--select-modal form__input--open') {
       modal.classList.remove('form__input--open');
       modal.classList.add('form__input--close');
       selectListModal.classList.remove('form__select--open');
+      formLabelModal.classList.remove('form__label--open');
     }
   });
 
@@ -120,5 +127,6 @@ formInputModal.forEach ((modal) => {
     modal.classList.remove('form__input--error');
     modal.classList.add('form__input--close');
     selectListModal.classList.remove('form__select--open');
+    formLabelModal.classList.remove('form__label--open');
   });
 });

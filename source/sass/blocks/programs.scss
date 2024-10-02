@@ -66,6 +66,16 @@
   @media (min-width: $desktop-width) {
     margin-right: 0;
   }
+
+  &::after {
+    right: 25px;
+  }
+
+
+  &:hover::after,
+  &:focus-visible::after {
+    right: 26px;
+  }
 }
 
 .programs__slider {

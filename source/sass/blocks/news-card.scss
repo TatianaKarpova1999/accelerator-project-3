@@ -285,4 +285,9 @@
   &::after {
     right: 11px;
   }
+
+  &:hover::after,
+  &:focus-visible::after {
+    right: 13px;
+  }
 }

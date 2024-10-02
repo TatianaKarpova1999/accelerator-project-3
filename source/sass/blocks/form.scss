@@ -200,7 +200,7 @@
     }
   }
 
-  &--modal .form__label::before {
+  &--modal .form__label--select::before {
     background-color: $basic-black;
   }
 }
@@ -349,6 +349,12 @@
     background-color: $basic-white;
     top: 53px;
     right: 20px;
+    transition: 0.1s;
+  }
+
+  &--open::before {
+    transform: rotate(180deg);
+    transition: 0.1s;
   }
 }
 
@@ -451,6 +457,12 @@
 
   &::after {
     background-color: $basic-blue;
+    right: 24px;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    right: 26px;
   }
 }
 

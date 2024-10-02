@@ -123,9 +123,30 @@
 
   }
 
+  & .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+    border: 2px solid #316dc2;
+    color: #316dc2;
+    transition: 0.1s;
+  }
+
+  & .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):focus-visible {
+    color: #316dc2;
+    background-color: #ffffff;
+    outline: none;
+    transition: 0.1s;
+  }
+
+  & .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):active {
+    background-color: #275699;
+    border: none;
+    color: #ffffff;
+    transition: 0.1s;
+  }
+
   & .swiper-pagination-bullet-active {
     color: #ffffff;
     background-color: #316dc2;
+    cursor: default;
   }
 }
 
