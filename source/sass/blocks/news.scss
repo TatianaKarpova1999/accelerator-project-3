@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 50px 15px;
+  padding: 51px 15px;
   padding-right: 0;
 
   @media (min-width: $tablet-width) {
@@ -21,7 +21,7 @@
 
   color: $basic-blue;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   padding-right: 15px;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +40,7 @@
   line-height: 12px;
   color: rgb(49, 109, 194, 0.6);
   text-transform: uppercase;
-  padding: 8px 16px;
+  padding: 8px 15px;
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
@@ -69,7 +69,7 @@
 }
 
 .news__tabs {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   min-height: 36px;
   align-items: center;
 

@@ -7,7 +7,7 @@ new Swiper('.swiper-tabs', {
   breakpoints: {
     320: {
       allowTouchMove: true,
-      spaceBetween: 12,
+      spaceBetween: 11,
       slidesPerView: 2,
       slidesPerGroup: 1,
     },

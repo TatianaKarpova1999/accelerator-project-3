@@ -6,7 +6,7 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 70px 15px;
+  padding: 71px 15px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -26,7 +26,7 @@
   @include h2;
 
   color: $basic-white;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
@@ -56,7 +56,7 @@
 }
 
 .grant__image {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   border-radius: 16px;
 
   @media (min-width: $tablet-width) {
@@ -70,7 +70,7 @@
   line-height: 22px;
   color: $basic-white;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
@@ -105,7 +105,7 @@
 }
 
 .grant__item {
-  padding: 25px 26px;
+  padding: 24px 26px;
   border: 1px solid $basic-grey;
   border-radius: 16px;
   margin-bottom: 15px;
