@@ -87,9 +87,17 @@
 
 .reviews .swiper-button-container {
   top: 54px;
+
+  @media (min-width: 768px) {
+    top: 0;
+  }
 }
 
 
 .programs .swiper-button-container {
   top: 54px;
+
+  @media (min-width: 768px) {
+    top: 0;
+  }
 }
