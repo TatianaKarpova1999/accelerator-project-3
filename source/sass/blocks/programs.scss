@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 50px 15px;
+  padding: 56px 15px;
   display: grid;
   position: relative;
 
@@ -24,7 +24,7 @@
 .programs__title {
   @include h2;
 
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   color: $basic-blue;
 
   @media (min-width: $tablet-width) {
@@ -100,5 +100,28 @@
 .programs__list {
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+  }
+}
+
+.programs__description {
+  position: relative;
+
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 13px 18px;
+    padding-bottom: 14px;
+    padding-right: 77px;
+    background-color: $basic-white;
+    margin: 0;
+    border-radius: 0 12px 12px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 12px 18px;
+      padding-right: 64px;
+      padding-bottom: 15px;
+    }
   }
 }
