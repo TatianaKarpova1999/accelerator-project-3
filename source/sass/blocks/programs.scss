@@ -68,13 +68,17 @@
   }
 
   &::after {
-    right: 25px;
+    @media (min-width: $tablet-width) {
+      right: 25px;
+    }
   }
 
 
   &:hover::after,
   &:focus-visible::after {
-    right: 26px;
+    @media (min-width: $tablet-width) {
+      right: 26px;
+    }
   }
 }
 

@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $basic-blue;
+  min-height: 568px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 768px;
+  }
 
   p {
     max-width: 267px;
@@ -27,7 +32,7 @@
       max-width: none;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       line-height: 26px;
       padding: 35px 50px;
       padding-top: 0;
@@ -226,5 +231,21 @@
 
   &::before {
     right: 3px;
+  }
+
+  &::after {
+    right: 16px;
+
+    @media (min-width: $tablet-width) {
+      right: 22px;
+    }
+  }
+
+  &:hover::after {
+    right: 18px;
+
+    @media (min-width: $tablet-width) {
+      right: 23px;
+    }
   }
 }

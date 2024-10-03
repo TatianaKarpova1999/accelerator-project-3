@@ -1,5 +1,6 @@
 .form {
   padding: 40px 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 50px 58px;
@@ -202,6 +203,11 @@
 
   &--modal .form__label--select::before {
     background-color: $basic-black;
+    top: 40px;
+
+    @media (min-width: $tablet-width) {
+      top: 53px;
+    }
   }
 }
 
@@ -211,7 +217,9 @@
   background-image: url("../../img/form-mobile@2x.webp");
   padding: 43px 10px;
   padding-bottom: 40px;
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     max-width: 652px;
@@ -221,6 +229,7 @@
     border-radius: 16px;
     background-image: url("../../img/form-tablet@2x.webp");
     box-sizing: border-box;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -231,7 +240,6 @@
 
 .form__content {
   max-width: 300px;
-  margin: 0 auto;
   box-sizing: border-box;
   padding: 15px;
   padding-bottom: 27px;
@@ -254,7 +262,7 @@
   form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -284,7 +292,7 @@
   line-height: 20px;
   color: $basic-grey;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -308,7 +316,7 @@
 }
 
 .form__item {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   textarea {
     height: 94px;
@@ -318,10 +326,20 @@
   &--checkbox {
     display: flex;
     column-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   &--select {
     position: relative;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 21px;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 15px;
   }
 }
 
@@ -329,7 +347,7 @@
   font-size: 12px;
   line-height: 14px;
   color: rgb(240, 239, 233, 0.8);
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   display: block;
   position: relative;
 
@@ -345,15 +363,19 @@
   &--select::before {
     content: "";
     position: absolute;
-    width: 20px;
+    width: 16px;
     height: 10px;
     mask-image: url("../__spritemap#sprite-arr-menu-view");
     mask-repeat: no-repeat;
-    mask-size: 20px 10px;
+    mask-size: 16px 10px;
     background-color: $basic-white;
-    top: 53px;
-    right: 20px;
+    top: 47px;
+    right: 30px;
     transition: 0.1s;
+
+    @media (min-width: $tablet-width) {
+      top: 53px;
+    }
   }
 
   &--open::before {
@@ -399,6 +421,15 @@
     background-color: rgb(255, 94, 102, 0.2);
     box-shadow: 0 0 0 1px $error;
   }
+
+  &--select {
+    max-width: 260px;
+    height: 52px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 100%;
+    }
+  }
 }
 
 .form__agreement {
@@ -442,17 +473,20 @@
   @include arr-thick;
   @include blue-button;
 
-  padding: 16px 31px;
+  padding: 15px 31px;
   padding-right: 69px;
-  width: 100%;
   background-color: transparent;
   color: $basic-white;
   border-color: $basic-white;
   position: relative;
+  width: 260px;
+  font-size: 12px;
+  line-height: 12px;
 
   @media (min-width: $tablet-width) {
     padding: 21px 31px;
     padding-right: 69px;
+    width: 100%;
   }
 
   &::before {
@@ -461,12 +495,17 @@
 
   &::after {
     background-color: $basic-blue;
-    right: 24px;
+
+    @media (min-width: $tablet-width) {
+      right: 24px;
+    }
   }
 
   &:hover::after,
   &:focus-visible::after {
-    right: 26px;
+    @media (min-width: $tablet-width) {
+      right: 26px;
+    }
   }
 }
 

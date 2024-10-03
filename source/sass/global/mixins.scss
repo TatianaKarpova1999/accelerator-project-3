@@ -58,7 +58,11 @@
     background-color: $basic-blue;
     transform: rotate(45deg) translateY(-50%);
     transition: 0.1s;
-    right: 24px;
+    right: 21px;
+
+    @media (min-width: $tablet-width) {
+      right: 24px;
+    }
   }
 
   &:active {
