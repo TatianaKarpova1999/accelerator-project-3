@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 55px 15px;
+  padding: 56px 15px;
   padding-bottom: 50px;
   position: relative;
 
@@ -21,7 +21,7 @@
   @include h2;
 
   color: $basic-blue;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding: 0 45px;
