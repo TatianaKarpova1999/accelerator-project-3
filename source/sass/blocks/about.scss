@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 50px 15px;
+  padding: 51px 15px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -43,7 +43,7 @@
 
   color: $basic-blue;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -102,7 +102,7 @@
   @include light-button;
 
   text-decoration: none;
-  padding: 13px 21px;
+  padding: 15px 21px;
   padding-right: 59px;
   background-color: transparent;
   position: relative;
