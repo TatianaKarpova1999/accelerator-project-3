@@ -56,21 +56,6 @@
   position: relative;
   margin-left: auto;
 
-  &--close::before,
-  &--open::before {
-    content: "";
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    background-color: $basic-blue;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5px;
-    z-index: 1;
-    cursor: pointer;
-  }
-
   &--close .header__list {
     overflow: none;
     opacity: 0;
@@ -93,7 +78,7 @@
     }
   }
 
-  &--open::before {
+  &--open .header__toggle span::before {
     background-color: $basic-white;
   }
 }
@@ -252,5 +237,63 @@
 
   &--open::before {
     transform: rotate(-45deg);
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible ~ .header__nav::before {
+    outline: none;
+    background-color: $basic-blue;
+  }
+
+  span::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background-color: $basic-blue;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  &:hover span::before,
+  &:focus-visible span::before {
+    background-color: $basic-white;
+    transition: 0.1s;
+  }
+
+
+  &:hover,
+  &:focus-visible {
+    background-color: $basic-blue;
+    transition: 0.1s;
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.7);
+  }
+
+  &:active::before {
+    opacity: 0.7;
+    background-color: $basic-blue;
+  }
+
+  &--close:focus-visible::before,
+  &--close:hover::before {
+    background-color: $basic-blue;
+    transition: 0.1s;
+    box-shadow: 0 4px 0 0 $basic-blue, 0 -4px 0 0 $basic-blue;
+  }
+
+  &--close:focus-visible span::before,
+  &--close:hover span::before {
+    background-color: $basic-white;
   }
 }

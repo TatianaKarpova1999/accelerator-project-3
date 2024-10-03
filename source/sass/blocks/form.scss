@@ -319,6 +319,10 @@
     display: flex;
     column-gap: 10px;
   }
+
+  &--select {
+    position: relative;
+  }
 }
 
 .form__label {
@@ -531,6 +535,8 @@
   background-color: $basic-white;
   border-radius: 8px;
   box-shadow: 0 0 0 1px $basic-white;
+  position: absolute;
+  width: 100%;
 
   &--open {
     transition: all 0.1s linear;

@@ -6,7 +6,7 @@ const menuLink = list.querySelectorAll('.header__link');
 
 
 body.addEventListener('click', (evt) => {
-  if (evt.target.className === 'header__nav header__nav--close' || evt.target.className === 'header__toggle header__toggle--close') {
+  if (evt.target.className === 'header__toggle header__toggle--close' || evt.target.parentElement.className === 'header__toggle header__toggle--close') {
     menu.classList.remove('header__nav--close');
     button.classList.remove('header__toggle--close');
     menu.classList.add('header__nav--open');

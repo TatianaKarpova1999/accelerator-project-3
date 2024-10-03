@@ -18,7 +18,9 @@
           </div>
 
           <nav class="header__nav header__nav--close" aria-label="Главная навигация">
-            <button class="header__toggle header__toggle--close" type="button">Меню</button>
+            <button class="header__toggle header__toggle--close" type="button">
+              <span>Меню</span>
+            </button>
             <ul class="header__list">
               <li class="header__item">
                 <a class="header__link" href="#">О проекте</a>
@@ -539,7 +541,7 @@
                     <label class="form__label" for="comment">Ваше сообщение</label>
                     <textarea class="form__input" id="comment" name="comment"></textarea>
                   </li>
-                  <li class="form__item">
+                  <li class="form__item form__item--select">
                     <label class="form__label form__label--select" for="city">Выберете город</label>
                     <input class="form__input form__input--select form__input--close" type="text" id="city" name="city" required>
                     <ul class="form__select">
@@ -638,7 +640,7 @@
                   <label class="form__label" for="modal-phone">Телефон</label>
                   <input class="form__input form__input--tel" type="tel" id="modal-phone" name="phone" required>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--select">
                   <label class="form__label form__label--select" for="modal-city">Выберете город</label>
                   <input class="form__input form__input--select form__input--select-modal form__input--close" type="text" id="modal-city" name="city" required>
                   <ul class="form__select form__select--modal">
