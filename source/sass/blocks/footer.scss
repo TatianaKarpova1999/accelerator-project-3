@@ -12,8 +12,9 @@
     padding: 40px 45px;
     display: grid;
     grid-template-columns: 52px auto auto;
+    justify-content: space-between;
     row-gap: 10px;
-    column-gap: 98px;
+    column-gap: 92px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +23,7 @@
     padding-bottom: 40px;
     column-gap: 0;
     row-gap: 25px;
+    justify-content: normal;
   }
 }
 
@@ -68,6 +70,7 @@
 
   @media (min-width: $tablet-width) {
     column-gap: 15px;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +78,7 @@
     max-width: 603px;
     column-gap: 30px;
     margin-left: 52px;
+    margin-top: 0;
   }
 }
 

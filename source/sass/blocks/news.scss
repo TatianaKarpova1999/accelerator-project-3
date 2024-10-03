@@ -21,7 +21,7 @@
 
   color: $basic-blue;
   text-align: center;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   padding-right: 15px;
 
   @media (min-width: $tablet-width) {
@@ -40,8 +40,9 @@
   line-height: 12px;
   color: rgb(49, 109, 194, 0.6);
   text-transform: uppercase;
-  padding: 8px 15px;
+  padding: 10px 15px;
   border-radius: 20px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
