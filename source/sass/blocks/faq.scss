@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 50px 15px;
+  padding: 52px 15px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -20,7 +20,7 @@
 
   text-align: center;
   color: $basic-blue;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
@@ -39,7 +39,7 @@
 }
 
 .faq__item {
-  padding: 20px 17px;
+  padding: 20px 15px;
   border: 2px solid $basic-blue;
   border-radius: 14px;
   display: grid;
@@ -167,9 +167,9 @@
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 18px;
   color: $basic-blue;
-  max-width: 187px;
+  max-width: 214px;
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
