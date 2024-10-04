@@ -311,16 +311,25 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
 .form__item {
   margin-bottom: 21px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   textarea {
     height: 94px;
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      height: 88px;
+    }
   }
 
   &--checkbox {
@@ -328,18 +337,34 @@
     column-gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      justify-content: start;
+    }
   }
 
   &--select {
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
   }
 
   &:nth-child(2) {
     margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
   &:nth-child(3) {
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 14px;
+    }
   }
 }
 
@@ -354,6 +379,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 20px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -375,6 +401,7 @@
 
     @media (min-width: $tablet-width) {
       top: 53px;
+      right: 20px;
     }
   }
 
