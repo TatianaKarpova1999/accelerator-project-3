@@ -5,6 +5,7 @@
   background-size: cover;
   box-sizing: border-box;
   border-radius: 12px;
+  min-height: 400px;
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
