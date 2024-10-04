@@ -1,21 +1,20 @@
 .programs-card {
   padding: 18px 10px;
-  padding-top: 271px;
   background-color: $basic-blue;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  border-radius: 16px;
+  border-radius: 12px;
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
     min-height: 420px;
     padding: 10px 20px;
-    padding-top: 285px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 392px;
+    padding-bottom: 17px;
   }
 
   &--one,
@@ -24,6 +23,10 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/programs-tablet-1@2x.webp");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/programs-desktop-1@2x.webp");
     }
   }
 
@@ -34,6 +37,10 @@
     @media (min-width: $tablet-width) {
       background-image: url("../../img/programs-tablet-2@2x.webp");
     }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/programs-desktop-2@2x.webp");
+    }
   }
 
   &--three {
@@ -41,6 +48,10 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/programs-tablet-3@2x.webp");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/programs-desktop-3@2x.webp");
     }
   }
 }
@@ -67,6 +78,13 @@
     padding-right: 38px;
     padding-bottom: 6px;
     max-width: 173px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 17px;
+    max-width: 194px;
+    min-height: 41px;
   }
 
   &::before {
@@ -99,3 +117,37 @@
     right: 11px;
   }
 }
+
+.programs-card__description {
+  position: relative;
+
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 13px 18px;
+    padding-bottom: 14px;
+    padding-right: 77px;
+    background-color: $basic-white;
+    margin: 0;
+    border-radius: 0 12px 12px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 12px 18px;
+      padding-right: 64px;
+      padding-bottom: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      line-height: 18px;
+      padding-right: 57px;
+      max-width: 321px;
+      box-sizing: border-box;
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
