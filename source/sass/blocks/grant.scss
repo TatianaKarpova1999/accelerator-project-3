@@ -64,6 +64,12 @@
   }
 }
 
+.grant__conditions {
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
+}
+
 .grant__conditions-title {
   font-weight: 400;
   font-size: 18px;
@@ -81,7 +87,7 @@
   @media (min-width: $desktop-width) {
     font-size: 32px;
     line-height: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 56px;
     max-width: 373px;
   }
 }
@@ -102,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    max-width: 478px;
   }
 }
 
