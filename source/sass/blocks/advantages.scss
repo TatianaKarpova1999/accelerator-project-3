@@ -50,7 +50,7 @@
     padding: 30px 41px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 57px;
+    column-gap: 45px;
     align-items: center;
   }
 
@@ -69,8 +69,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 132px;
+      max-width: 144px;
       margin-bottom: 0;
+      font-size: 26px;
+      line-height: 30px;
     }
   }
 
