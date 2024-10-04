@@ -49,10 +49,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 1px;
+    margin-top: 2px;
   }
 }
 
@@ -201,7 +198,7 @@
   transition: 0.3s;
   text-align: left;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-right: 71px;
   }
 
@@ -265,7 +262,7 @@
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
-    right: 5px;
+    right: 4px;
     z-index: 1;
     cursor: pointer;
   }
