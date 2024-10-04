@@ -50,6 +50,10 @@
   @media (min-width: $tablet-width) {
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+  }
 }
 
 .header__nav {
@@ -197,6 +201,10 @@
   transition: 0.3s;
   text-align: left;
 
+  @media (min-width: $desktop-width) {
+    padding-right: 71px;
+  }
+
   &--close::before {
     content: "";
     position: absolute;
@@ -206,7 +214,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 19px;
-    box-shadow: 0 4px 0 0 $basic-white, 0 -4px 0 0 $basic-white;
+    box-shadow: 0 3px 0 0 $basic-white, 0 -3px 0 0 $basic-white;
     z-index: 2;
     border-radius: 50px;
   }
@@ -289,7 +297,7 @@
   &--close:hover::before {
     background-color: $basic-blue;
     transition: 0.1s;
-    box-shadow: 0 4px 0 0 $basic-blue, 0 -4px 0 0 $basic-blue;
+    box-shadow: 0 3px 0 0 $basic-blue, 0 -3px 0 0 $basic-blue;
   }
 
   &--close:focus-visible span::before,
