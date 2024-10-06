@@ -40,19 +40,19 @@
     height: 9px;
   }
 
-  &:hover {
+  &:not(.swiper-pagination-bullet-active):hover {
     background-color: rgb(49, 109, 194, 0.7);
     border: 2px solid #ffffff;
     transition: 0.1s;
   }
 
-  &:focus-visible {
+  &:not(.swiper-pagination-bullet-active):focus-visible {
     background-color: #316dc2;
     outline: none;
     transition: 0.1s;
   }
 
-  &:active {
+  &:not(.swiper-pagination-bullet-active):active {
     background-color: #275699;
     transition: 0.1s;
   }
@@ -63,6 +63,7 @@
   border: none;
   width: 8px;
   height: 8px;
+  cursor: default;
 
   @media (min-width: 768px) {
     width: 12px;
@@ -120,12 +121,8 @@
   margin: 0 auto;
   text-align: center;
   transition: .3s opacity;
-  max-width: 152px;
+  position: relative;
 
-  @media (min-width: 768px) {
-    min-width: 188px;
-    max-width: 188px;
-  }
 
   & .swiper-pagination-bullet {
     min-width: 26px;
@@ -140,7 +137,6 @@
     line-height: 14px;
     cursor: pointer;
     position: relative;
-
   }
 
   & .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {

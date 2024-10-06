@@ -52,6 +52,6 @@ new Swiper('.swiper-news', {
       slidesPerGroup: 1,
       spaceBetween: 28,
     },
-  }
+  },
 });
 
