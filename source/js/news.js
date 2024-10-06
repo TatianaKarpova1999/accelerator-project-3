@@ -4,7 +4,9 @@ import 'swiper/css';
 import 'swiper/css/grid';
 
 const pagination = document.querySelector('.swiper-pagination-news');
-const bullet = pagination.querySelectorAll('span');
+const newsBlock = document.querySelector('.news')
+const buttonPrev = newsBlock.querySelector('.swiper-button-prev');
+const buttonNext = newsBlock.querySelector('.swiper-button-next');
 
 new Swiper('.swiper-news', {
   modules: [Navigation, Pagination, Grid],
@@ -67,6 +69,32 @@ pagination.addEventListener('click', (evt) => {
     } else if (evt.target.previousElementSibling.className === 'swiper-pagination-bullet') {
       evt.target.previousElementSibling.classList.add('swiper-pagination-bullet-main');
       pagination.children[parseInt(evt.target.innerHTML, 10) + 2].classList.remove('swiper-pagination-bullet-main');
+    }
+  }
+});
+
+buttonNext.addEventListener('click', () => {
+  for (let i = 0; i <= pagination.children.length - 1; i++) {
+    if (pagination.children[i].nextSibling !== null) {
+      if (pagination.children[i].className === 'swiper-pagination-bullet swiper-pagination-bullet-main swiper-pagination-bullet-active') {
+        if (pagination.children[i].nextSibling.className === 'swiper-pagination-bullet') {
+          pagination.children[i].nextSibling.classList.add('swiper-pagination-bullet-main');
+          pagination.children[pagination.children[i].innerHTML - 4].classList.remove('swiper-pagination-bullet-main');
+        }
+      }
+    }
+  }
+});
+
+buttonPrev.addEventListener('click', () => {
+  for (let i = 0; i <= pagination.children.length - 1; i++) {
+    if (pagination.children[i].previousElementSibling !== null) {
+      if (pagination.children[i].className === 'swiper-pagination-bullet swiper-pagination-bullet-main swiper-pagination-bullet-active') {
+        if (pagination.children[i].previousElementSibling.className === 'swiper-pagination-bullet') {
+          pagination.children[i].previousElementSibling.classList.add('swiper-pagination-bullet-main');
+          pagination.children[parseInt(pagination.children[i].innerHTML, 10) + 2].classList.remove('swiper-pagination-bullet-main');
+        }
+      }
     }
   }
 });
