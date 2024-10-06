@@ -192,6 +192,8 @@
 }
 
 .news__slider .swiper-slide-active {
+  min-height: 330px;
+
     @media (min-width: 1440px) {
       min-width: 604px;
       transition: 0.3s;
