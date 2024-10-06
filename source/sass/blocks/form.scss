@@ -530,6 +530,8 @@
 
   &:hover::after,
   &:focus-visible::after {
+    right: 20px;
+
     @media (min-width: $tablet-width) {
       right: 26px;
     }

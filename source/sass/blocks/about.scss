@@ -125,4 +125,17 @@
     max-width: 279px;
     margin-bottom: 60px;
   }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      right: 24px;
+    }
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    @media (min-width: $tablet-width) {
+      right: 26px;
+    }
+  }
 }

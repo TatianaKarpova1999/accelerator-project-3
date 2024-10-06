@@ -247,11 +247,12 @@
     }
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus-visible::after {
     right: 18px;
 
     @media (min-width: $tablet-width) {
-      right: 23px;
+      right: 24px;
     }
   }
 }
