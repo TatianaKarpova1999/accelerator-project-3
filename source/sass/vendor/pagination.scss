@@ -194,9 +194,15 @@
 .news__slider .swiper-slide-active {
   min-height: 330px;
 
+    @media (min-width: 768px) {
+      min-height: 350px;
+      transition: 0.3s;
+    }
+
     @media (min-width: 1440px) {
       min-width: 604px;
       transition: 0.3s;
+      min-height: 400px;
     }
 
     .news-card__title {
@@ -224,4 +230,8 @@
 .programs-card {
   display: flex !important;
   align-items: end;
+}
+
+.news__item {
+  margin-top: 0 !important;
 }
