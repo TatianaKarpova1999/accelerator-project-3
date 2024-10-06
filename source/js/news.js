@@ -13,8 +13,6 @@ new Swiper('.swiper-news', {
   pagination: {
     el: '.swiper-pagination-news',
     clickable: true,
-    type: 'bullets',
-    dynamicBullets: true,
     renderBullet: function (index, className) {
       return `<span class="${className}">${index + 1}</span>`;
     },
@@ -57,30 +55,18 @@ new Swiper('.swiper-news', {
   },
 });
 
-let i = 0;
-let j = pagination.children.length;
+for (let i = 0; i <= 3; i++) {
+  pagination.children[i].classList.add('swiper-pagination-bullet-main');
+}
 
 pagination.addEventListener('click', (evt) => {
-  // if (evt.target.innerHTML >= 4 && evt.target.nextElementSibling.className === 'swiper-pagination-bullet swiper-pagination-bullet-active-next') {
-  //   pagination.children[i].style.opacity = '0';
-  //   pagination.children[j - 1].style.opacity = '1';
-  //   i++;
-  //   console.log(evt.target.nextElementSibling.className);
-  // } else if (evt.target.innerHTML <= 5 && evt.target.previousElementSibling.className === 'swiper-pagination-bullet swiper-pagination-bullet-active-prev') {
-  //   pagination.children[j - 1].style.opacity = '0';
-  //   pagination.children[evt.target.innerHTML - 2].style.opacity = '1';
-  //   console.log(evt.target.innerHTML);
-  //   j--;
-  // }
-
-
-
-
-  console.log(evt.target.innerHTML);
-  for (i = 0; i < 8; i++)
-  {
-    console.log(pagination.children[i].className);
+  if (evt.target.nextSibling !== null && evt.target.previousElementSibling !== null) {
+    if (evt.target.nextSibling.className === 'swiper-pagination-bullet') {
+      evt.target.nextSibling.classList.add('swiper-pagination-bullet-main');
+      pagination.children[evt.target.innerHTML - 4].classList.remove('swiper-pagination-bullet-main');
+    } else if (evt.target.previousElementSibling.className === 'swiper-pagination-bullet') {
+      evt.target.previousElementSibling.classList.add('swiper-pagination-bullet-main');
+      pagination.children[parseInt(evt.target.innerHTML, 10) + 2].classList.remove('swiper-pagination-bullet-main');
+    }
   }
-
-
 });
