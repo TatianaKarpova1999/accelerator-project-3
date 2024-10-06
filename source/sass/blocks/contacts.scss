@@ -19,17 +19,6 @@
     display: grid;
     grid-template-columns: 586px auto;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 1242px;
-      height: 2px;
-      background-color: rgb(255, 255, 255, 0.2);
-      top: 248px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 
   picture {
@@ -58,9 +47,9 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +65,11 @@
     bottom: -30px;
 
     @media (min-width: $desktop-width) {
-      display: none;
+      width: 1242px;
+      height: 2px;
+      background-color: rgb(255, 255, 255, 0.2);
+      transform: translateX(-50%);
+      left: 33px;
     }
   }
 }

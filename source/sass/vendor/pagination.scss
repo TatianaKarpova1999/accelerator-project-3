@@ -137,6 +137,7 @@
     line-height: 14px;
     cursor: pointer;
     position: relative;
+    margin: 0 10px;
   }
 
   & .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
@@ -180,15 +181,6 @@
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
   white-space: nowrap;
-}
-
-.swiper-pagination-bullet-active-prev-prev,
-.swiper-pagination-bullet-active-next-next {
-  opacity: 0;
-}
-
-.swiper-pagination-bullet-active-main {
-  opacity: 1;
 }
 
 .news__slider .swiper-slide-active {
