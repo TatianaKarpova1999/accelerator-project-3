@@ -51,10 +51,18 @@
     padding: 12px 22px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 14px 30px;
+  }
+
   &--current {
     border: 2px solid $basic-blue;
     border-radius: 20px;
     color: $basic-blue;
+
+    @media (min-width: $desktop-width) {
+      padding: 14px 34px;
+    }
   }
 
   &:hover {

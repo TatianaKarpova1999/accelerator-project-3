@@ -14,7 +14,7 @@ new Swiper('.swiper-tabs', {
 
     768: {
       allowTouchMove: false,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
   }
 });

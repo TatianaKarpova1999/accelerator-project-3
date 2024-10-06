@@ -50,7 +50,7 @@ new Swiper('.swiper-news', {
       allowTouchMove: false,
       slidesPerView: 'auto',
       slidesPerGroup: 1,
-      spaceBetween: 28,
+      spaceBetween: 32,
     },
   },
 });
