@@ -90,6 +90,11 @@
     box-shadow: 0 0 0 1px $error;
   }
 
+  &--modal .form__input--error:focus-visible {
+    background-color: rgb(255, 94, 102, 0.2);
+    box-shadow: 0 0 0 1px $error;
+  }
+
   &--modal .form__input:checked + .form__agreement::before {
     background-color: $basic-blue;
   }
@@ -143,6 +148,7 @@
   &--modal .form__button {
     @include light-button;
 
+    margin: 0 auto;
     border-color: $basic-blue;
     color: $basic-blue;
 
@@ -448,6 +454,12 @@
     background-color: rgb(255, 94, 102, 0.2);
     box-shadow: 0 0 0 1px $error;
   }
+
+  &--error:focus-visible {
+    background-color: rgb(255, 94, 102, 0.2);
+    box-shadow: 0 0 0 1px $error;
+  }
+
 
   &--select {
     max-width: 260px;

@@ -7,6 +7,17 @@ const pagination = document.querySelector('.swiper-pagination-news');
 const newsBlock = document.querySelector('.news');
 const buttonPrev = newsBlock.querySelector('.swiper-button-prev');
 const buttonNext = newsBlock.querySelector('.swiper-button-next');
+const footerList = document.querySelector('.footer__list');
+const news = document.querySelector('.news');
+
+
+footerList.addEventListener('click', (evt) => {
+  evt.preventDefault();
+
+  if (evt.target.innerHTML === 'Новости') {
+    news.scrollIntoView({behavior: 'smooth'});
+  }
+});
 
 new Swiper('.swiper-news', {
   modules: [Navigation, Pagination, Grid],
