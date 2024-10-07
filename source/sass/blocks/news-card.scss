@@ -153,20 +153,20 @@
   }
 
   &:nth-child(7) {
-    display: none;
+    order: 1;
 
     @media (min-width: $desktop-width) {
-      display: flex;
+      order: 0;
     }
   }
 
   &:nth-child(8) {
     @media (min-width: $tablet-width) {
-      display: none;
+      order: 2;
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
+      order: 0;
     }
   }
 }
